@@ -1,0 +1,94 @@
+@use "../core/variables" as *;
+
+.main-header {
+  // Changement pour un positionnement flottant
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  padding: 1rem 0;
+  // Effet de verre
+  background: rgba($white, 0.85);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid $gray-medium;
+  transition: $transition-smooth;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: $primary-color;
+    text-decoration: none;
+    span {
+      color: $accent-color;
+    }
+  }
+
+  .main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  .main-nav a {
+    text-decoration: none;
+    color: $text-color;
+    font-weight: 500;
+    transition: $transition-smooth;
+
+    // Pour aligner icône et texte
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    // Style pour l'icône
+    i {
+      width: 16px;
+      height: 16px;
+    }
+
+    &:hover,
+    &.active {
+      color: $primary-color;
+    }
+  }
+
+  .mobile-menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  @media (max-width: $breakpoint-lg) {
+    // Changé pour lg pour plus de marge
+    .main-nav,
+    .header-actions {
+      display: none;
+    }
+    .mobile-menu-toggle {
+      display: flex; // Changez 'block' en 'flex' pour mieux centrer
+      align-items: center;
+      justify-content: center;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 0.5rem;
+
+
+      svg {
+        width: 28px;
+        height: 28px;
+        color: $primary-color;
+      }
+    }
+  }
+}

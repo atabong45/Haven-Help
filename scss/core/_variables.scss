@@ -1,0 +1,26 @@
+// --- Polices ---
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+$font-family-base: "Inter", sans-serif;
+
+// --- Couleurs (comme demandé) ---
+$primary-color: #003580; // Bleu foncé
+$accent-color: #f39c12; // Orange
+
+// --- Nuances ---
+$white: #ffffff;
+$black: #161a1d;
+$gray-light: #f8f9fa;
+$gray-medium: #e9ecef;
+$gray-dark: #6c757d;
+$text-color: #212529;
+
+// --- Design Tokens ---
+$border-radius: 8px;
+$box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+$transition-smooth: all 0.3s ease-in-out;
+
+// --- Breakpoints pour le responsive ---
+$breakpoint-md: 768px;
+$breakpoint-lg: 1024px;
+
+$whatsapp-color: #25d366;

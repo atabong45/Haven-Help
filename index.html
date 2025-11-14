@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Haven & Help - Location d'hébergements et services locaux</title>
+    <meta
+      name="description"
+      content="Découvrez des hébergements uniques et des services locaux de confiance."
+    />
+
+    <!-- CSS Compilé -->
+    <link rel="stylesheet" href="/css/main.css" />
+    <script src="https://unpkg.com/lucide@latest" defer></script>
+
+    <!-- JavaScript (defer pour charger après le HTML) -->
+    <script src="/js/main.js" type="module" defer></script>
+    <script src="/js/global.js" type="module" defer></script>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="container">
+        <a href="/index.html" class="logo">Haven<span>&</span>Help</a>
+        <nav class="main-nav">
+          <ul>
+            <!-- Ajout des icônes et de la classe "active" pour la page actuelle -->
+            <li>
+              <a href="/pages/logements.html" class="active"
+                ><i data-lucide="home"></i>Hébergement</a
+              >
+            </li>
+            <li>
+              <a href="/pages/services.html"
+                ><i data-lucide="wrench"></i> Service</a
+              >
+            </li>
+            <li>
+              <a href="#"><i data-lucide="compass"></i> Expériences</a>
+            </li>
+            <li>
+              <a href="/pages/contact.html"><i data-lucide="mail"></i> Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header-actions">
+          <button class="btn btn-outline">Connexion</button>
+          <button class="btn btn-accent">Inscription</button>
+          <!-- Nouvelle classe ici -->
+        </div>
+        <button id="mobile-menu-toggle" class="mobile-menu-toggle">
+          <span class="icon-menu">
+            <i data-lucide="menu"></i>
+          </span>
+        </button>
+      </div>
+    </header>
+
+    <!-- MENU MOBILE -->
+    <div id="mobile-nav" class="mobile-nav">
+      <div class="mobile-nav-header">
+        <a href="/index.html" class="logo">Haven<span>&</span>Help</a>
+        <button
+          id="mobile-nav-close-btn"
+          class="mobile-nav-close"
+          aria-label="Fermer le menu"
+        >
+          <i data-lucide="x"></i>
+        </button>
+      </div>
+      <div class="mobile-nav-content">
+        <nav class="mobile-nav-links">
+          <ul>
+            <li>
+              <a href="/pages/logements.html" class="active"
+                ><i data-lucide="home"></i>Hébergement</a
+              >
+            </li>
+            <li>
+              <a href="/pages/services.html"
+                ><i data-lucide="wrench"></i>Service</a
+              >
+            </li>
+            <li>
+              <a href="#"><i data-lucide="compass"></i> Expériences</a>
+            </li>
+            <li>
+              <a href="/pages/contact.html"><i data-lucide="mail"></i> Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="mobile-nav-actions">
+          <a href="#" class="btn btn-outline">Connexion</a>
+          <a href="#" class="btn btn-accent">Inscription</a>
+        </div>
+      </div>
+    </div>
+    <!-- FIN DU MENU MOBILE -->
+
+    <main>
+      <!-- Section Bannière (Hero) -->
+      <section class="hero">
+        <!-- La div .container a été retirée d'ici -->
+        <div class="hero-content">
+          <h1>
+            Trouvez votre chez-vous,<br /><span class="highlight"
+              >partout dans le monde</span
+            >
+          </h1>
+          <p>
+            Découvrez des hébergements uniques et des services locaux de
+            confiance pour un séjour inoubliable.
+          </p>
+          <div class="hero-actions">
+            <a href="#search-section" class="btn btn-accent"
+              >Explorer les logements</a
+            >
+            <a href="pages/services.html" class="btn btn-outline-light"
+              >Découvrir les services</a
+            >
+          </div>
+        </div>
+        <div class="scroll-indicator"></div>
+      </section>
+
+      <!-- Section Barre de Recherche -->
+      <section id="search-section" class="search-bar-section">
+        <div class="container">
+          <h2 class="section-title">Rechercher un hébergement</h2>
+          <div class="search-container">
+            <form class="search-form-inner">
+              <div class="form-group">
+                <label for="destination">Destination</label>
+                <input
+                  type="text"
+                  id="destination"
+                  placeholder="Yaounde, Douala, Kribi..."
+                />
+              </div>
+              <div class="form-group">
+                <label for="budget">Budget par nuit</label>
+                <select id="budget">
+                  <option>Tous les prix</option>
+                  <option>Moins de 50 000XAF</option>
+                  <option>Moins de 80 000XAF</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="type">Type de logement</label>
+                <select id="type">
+                  <option>Tous les types</option>
+                  <option>Appartement</option>
+                  <option>Maison</option>
+                </select>
+              </div>
+              <button type="submit" class="btn btn-accent">Rechercher</button>
+            </form>
+            <hr class="separator" />
+            <div class="quick-filters">
+              <span>Filtres rapides:</span>
+              <a href="#" class="filter-link">WiFi</a>
+              <a href="#" class="filter-link">Piscine</a>
+              <a href="#" class="filter-link">Parking</a>
+              <a href="#" class="filter-link">Animaux acceptés</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Liste des Logements -->
+      <section class="accommodations-section">
+        <div class="container">
+          <h2>Hébergements populaires</h2>
+          <div id="accommodations-list" class="grid-layout">
+            <!-- Les cartes de logement seront injectées ici par JavaScript -->
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- BOUTON WHATSAPP FLOTTANT -->
+    <a
+      href="https://wa.me/33612345678?text=Bonjour%2C%20j'aimerais%20obtenir%20plus%20d'informations."
+      class="whatsapp-fab"
+      target="_blank"
+      aria-label="Contacter le support sur WhatsApp"
+    >
+      <i data-lucide="message-circle"></i>
+    </a>
+    <!-- FIN DU BOUTON WHATSAPP -->
+
+    <footer class="main-footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-column">
+            <h4>Haven&Help</h4>
+            <p>
+              Votre plateforme de confiance pour louer un hébergement ou
+              réserver un service local.
+            </p>
+          </div>
+          <div class="footer-column">
+            <h4>Navigation</h4>
+            <ul>
+              <li><a href="#">Louer un Hébergement</a></li>
+              <li><a href="#">Réserver un Service</a></li>
+              <li><a href="#">Expériences</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Légal</h4>
+            <ul>
+              <li><a href="#">Conditions Générales</a></li>
+              <li><a href="#">Confidentialité</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Suivez-nous</h4>
+            <!-- Pour que les icônes s'affichent, il faudra une librairie comme FontAwesome ou des SVGs -->
+            <p>Facebook, Twitter, Instagram</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Haven & Help. Tous droits réservés.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

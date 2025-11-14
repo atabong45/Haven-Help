@@ -1,0 +1,1998 @@
+Project Context From: /home/atabong/Documents/projet/Raquelle/version_html
+Generated On: ven. 14 nov. 2025 13:13:22 CET
+===============================================
+Ignored Directory Patterns: .* node_modules vendor build dist target __pycache__ .next cache target venv storage
+Ignored File Patterns: *.log *.jar *.pdf *.png *.jpg *.class *.sqlite *.csv project_context.txt package-lock.json yarn.lock composer.lock *.ico pnpm-lock.yaml
+===============================================
+
+//---> PATH: /home/atabong/Documents/projet/Raquelle/version_html/css/main.css
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  color: #212529;
+  background-color: #ffffff;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+a {
+  color: #003580;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #003580;
+  color: #ffffff;
+}
+
+.btn:hover {
+  background-color: #00204d;
+  text-decoration: none;
+}
+
+.btn.btn-outline {
+  background-color: transparent;
+  border-color: #003580;
+  color: #003580;
+}
+
+.btn.btn-outline:hover {
+  background-color: #003580;
+  color: #ffffff;
+}
+
+.btn.btn-sm {
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+}
+
+.btn.btn-accent {
+  background-color: #f39c12;
+  color: #ffffff;
+  border-color: #f39c12;
+}
+
+.btn.btn-accent:hover {
+  background-color: #c87f0a;
+  border-color: #c87f0a;
+}
+
+.btn.btn-outline-light {
+  background-color: transparent;
+  border-color: rgba(255, 255, 255, 0.5);
+  color: #ffffff;
+}
+
+.btn.btn-outline-light:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: #ffffff;
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  -webkit-box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+          box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card .card-content {
+  padding: 1rem;
+}
+
+.card .card-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 0.5rem;
+  color: #6c757d;
+  font-size: 0.9rem;
+}
+
+.card .card-title {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+  color: #212529;
+}
+
+.card .card-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e9ecef;
+}
+
+.card .card-price {
+  font-weight: 700;
+  color: #003580;
+}
+
+.search-container {
+  background: #ffffff;
+  padding: 1.5rem 2rem;
+  border-radius: 12px;
+  -webkit-box-shadow: 0 10px 30px rgba(40, 50, 60, 0.08);
+          box-shadow: 0 10px 30px rgba(40, 50, 60, 0.08);
+}
+
+.search-form-inner {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr auto;
+      grid-template-columns: 1fr 1fr 1fr auto;
+  gap: 1rem;
+  background: #f8f9fa;
+  padding: 1rem;
+  border-radius: 12px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.form-group label {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #6c757d;
+  margin-bottom: 0.25rem;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  padding: 0.75rem;
+  font-size: 1rem;
+  background: #ffffff;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #003580;
+}
+
+.separator {
+  border: none;
+  height: 1px;
+  background-color: #e9ecef;
+  margin: 1.5rem 0;
+}
+
+.quick-filters {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.5rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.quick-filters span {
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+.filter-link {
+  font-size: 0.9rem;
+  color: #212529;
+  padding: 0.25rem 0.5rem;
+  border-radius: 8px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+.filter-link:hover {
+  background-color: #f8f9fa;
+}
+
+@media (max-width: 1024px) {
+  .search-form-inner {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .search-form-inner {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+.main-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  padding: 1rem 0;
+  background: rgba(255, 255, 255, 0.85);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border-bottom: 1px solid #e9ecef;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.main-header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-header .logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #003580;
+  text-decoration: none;
+}
+
+.main-header .logo span {
+  color: #f39c12;
+}
+
+.main-header .main-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.main-header .main-nav a {
+  text-decoration: none;
+  color: #212529;
+  font-weight: 500;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.5rem;
+}
+
+.main-header .main-nav a i {
+  width: 16px;
+  height: 16px;
+}
+
+.main-header .main-nav a:hover, .main-header .main-nav a.active {
+  color: #003580;
+}
+
+.main-header .mobile-menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  .main-header .main-nav, .main-header .header-actions {
+    display: none;
+  }
+  .main-header .mobile-menu-toggle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+  }
+  .main-header .mobile-menu-toggle svg {
+    width: 28px;
+    height: 28px;
+    color: #003580;
+  }
+}
+
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100vh;
+  background: #ffffff;
+  z-index: 1000;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-shadow: -10px 0 30px rgba(0, 0, 0, 0.1);
+          box-shadow: -10px 0 30px rgba(0, 0, 0, 0.1);
+}
+
+.mobile-nav.is-open {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.mobile-nav-header {
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.mobile-nav-content {
+  padding: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.mobile-nav-links ul {
+  list-style: none;
+}
+
+.mobile-nav-links li {
+  margin-bottom: 0.5rem;
+}
+
+.mobile-nav-links a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem;
+  border-radius: 8px;
+  font-weight: 500;
+  color: #212529;
+}
+
+.mobile-nav-links a.active {
+  background-color: #f8f9fa;
+  color: #003580;
+}
+
+.mobile-nav-actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.75rem;
+  border-top: 1px solid #e9ecef;
+  padding-top: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.mobile-nav-actions .btn {
+  width: 100%;
+  text-align: center;
+}
+
+.main-footer {
+  background-color: #003580;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 4rem 0 2rem 0;
+  margin-top: 4rem;
+}
+
+.main-footer .footer-content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(220px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.main-footer .footer-column h4 {
+  color: #ffffff;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.main-footer .footer-column p {
+  line-height: 1.7;
+}
+
+.main-footer .footer-column ul {
+  list-style: none;
+}
+
+.main-footer .footer-column li {
+  margin-bottom: 0.5rem;
+}
+
+.main-footer .footer-column a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+}
+
+.main-footer .footer-column a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.main-footer .footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 2rem;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.hero {
+  height: 100vh;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 53, 128, 0.85)), color-stop(50%, rgba(0, 53, 128, 0.5)), to(rgba(0, 53, 128, 0.1))), url("../assets/images/hero-banner.jpg");
+  background-image: linear-gradient(90deg, rgba(0, 53, 128, 0.85) 0%, rgba(0, 53, 128, 0.5) 50%, rgba(0, 53, 128, 0.1) 100%), url("../assets/images/hero-banner.jpg");
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+}
+
+.hero .hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  color: #ffffff;
+  padding-left: 5%;
+}
+
+.hero h1 {
+  font-size: 4.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.hero h1 .highlight {
+  color: #f39c12;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 500px;
+  margin-bottom: 2rem;
+}
+
+.hero .hero-actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+}
+
+.hero .scroll-indicator {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 24px;
+  height: 40px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+}
+
+.hero .scroll-indicator::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 8px;
+  width: 4px;
+  height: 8px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 2px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-animation: bounce 2s infinite;
+          animation: bounce 2s infinite;
+}
+
+@-webkit-keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+  }
+  40% {
+    -webkit-transform: translate(-50%, 10px);
+            transform: translate(-50%, 10px);
+  }
+  60% {
+    -webkit-transform: translate(-50%, 5px);
+            transform: translate(-50%, 5px);
+  }
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+  }
+  40% {
+    -webkit-transform: translate(-50%, 10px);
+            transform: translate(-50%, 10px);
+  }
+  60% {
+    -webkit-transform: translate(-50%, 5px);
+            transform: translate(-50%, 5px);
+  }
+}
+
+.search-bar-section {
+  padding: 5rem 0;
+  background-color: #f8f9fa;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.25rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  color: #003580;
+}
+
+.search-bar-section {
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.search-bar-section .search-form {
+  background: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.5rem;
+  padding: 1rem;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.accommodations-section {
+  padding: 2rem 0 4rem 0;
+}
+
+.accommodations-section h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.grid-layout {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  .search-bar-section {
+    -webkit-transform: translateY(-25%);
+            transform: translateY(-25%);
+  }
+  .search-bar-section .search-form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 90%;
+  }
+  .search-bar-section .search-form input,
+  .search-bar-section .search-form select,
+  .search-bar-section .search-form button {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=main.css.map */// END OF FILE: css/main.css
+
+//---> PATH: /home/atabong/Documents/projet/Raquelle/version_html/css/main.css.map
+
+{
+    "version": 3,
+    "mappings": "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",
+    "sources": [
+        "../scss/main.scss",
+        "../scss/core/_variables.scss",
+        "../scss/core/_mixins.scss",
+        "../scss/core/_base.scss",
+        "../scss/components/_buttons.scss",
+        "../scss/components/_cards.scss",
+        "../scss/components/_forms.scss",
+        "../scss/components/_header.scss",
+        "../scss/components/_mobile-nav.scss",
+        "../scss/components/_footer.scss",
+        "../scss/pages/_home.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}// END OF FILE: css/main.css.map
+
+//---> PATH: /home/atabong/Documents/projet/Raquelle/version_html/data/accommodations.json
+
+[
+  {
+    "id": 1,
+    "title": "Appartement moderne centre-ville",
+    "type": "Appartement",
+    "location": "Paris, France",
+    "price": 120,
+    "rating": 4.8,
+    "image": "assets/images/accommodations/logement-1.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Villa avec piscine privée",
+    "type": "Villa",
+    "location": "Nice, France",
+    "price": 350,
+    "rating": 4.9,
+    "image": "assets/images/accommodations/logement-2.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Chalet cosy à la montagne",
+    "type": "Chalet",
+    "location": "Chamonix, France",
+    "price": 200,
+    "rating": 4.7,
+    "image": "assets/images/accommodations/logement-3.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Studio avec vue sur la mer",
+    "type": "Studio",
+    "location": "Marseille, France",
+    "price": 90,
+    "rating": 4.5,
+    "image": "assets/images/accommodations/logement-4.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Maison de campagne tranquille",
+    "type": "Maison",
+    "location": "Provence, France",
+    "price": 150,
+    "rating": 4.6,
+    "image": "assets/images/accommodations/logement-5.jpg"
+  }
+]
+// END OF FILE: data/accommodations.json
+
+//---> PATH: /home/atabong/Documents/projet/Raquelle/version_html/data/reviews.json
+
+// END OF FILE: data/reviews.json
+
+//---> PATH: /home/atabong/Documents/projet/Raquelle/version_html/data/services.json
+
+// END OF FILE: data/services.json
+
+//---> PATH: /home/atabong/Documents/projet/Raquelle/version_html/index.html
+
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Haven & Help - Location d'hébergements et services locaux</title>
+    <meta
+      name="description"
+      content="Découvrez des hébergements uniques et des services locaux de confiance."
+    />
+
+    <!-- CSS Compilé -->
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="https://unpkg.com/lucide@latest" defer></script>
+
+    <!-- JavaScript (defer pour charger après le HTML) -->
+    <script src="js/main.js" type="module" defer></script>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="container">
+        <a href="index.html" class="logo">Haven<span>&</span>Help</a>
+        <nav class="main-nav">
+          <ul>
+            <!-- Ajout des icônes et de la classe "active" pour la page actuelle -->
+            <li>
+              <a href="#" class="active"
+                ><i data-lucide="home"></i>Hébergement</a
+              >
+            </li>
+            <li>
+              <a href="#"><i data-lucide="wrench"></i> Service</a>
+            </li>
+            <li>
+              <a href="#"><i data-lucide="compass"></i> Expériences</a>
+            </li>
+            <li>
+              <a href="#"><i data-lucide="mail"></i> Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header-actions">
+          <button class="btn btn-outline">Connexion</button>
+          <button class="btn btn-accent">Inscription</button>
+          <!-- Nouvelle classe ici -->
+        </div>
+        <button id="mobile-menu-toggle" class="mobile-menu-toggle">
+          <i data-lucide="menu" class="icon-menu"></i>
+          <i data-lucide="x" class="icon-close" style="display: none"></i>
+        </button>
+      </div>
+    </header>
+
+    <!-- MENU MOBILE -->
+    <div id="mobile-nav" class="mobile-nav">
+      <div class="mobile-nav-header">
+        <a href="index.html" class="logo">Haven<span>&</span>Help</a>
+      </div>
+      <div class="mobile-nav-content">
+        <nav class="mobile-nav-links">
+          <ul>
+            <li>
+              <a href="#" class="active"
+                ><i data-lucide="home"></i> Louer un Hébergement</a
+              >
+            </li>
+            <li>
+              <a href="#"><i data-lucide="wrench"></i> Réserver un Service</a>
+            </li>
+            <li>
+              <a href="#"><i data-lucide="compass"></i> Expériences</a>
+            </li>
+            <li>
+              <a href="#"><i data-lucide="mail"></i> Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="mobile-nav-actions">
+          <a href="#" class="btn btn-outline">Connexion</a>
+          <a href="#" class="btn btn-accent">Inscription</a>
+        </div>
+      </div>
+    </div>
+    <!-- FIN DU MENU MOBILE -->
+
+    <main>
+      <!-- Section Bannière (Hero) -->
+    <section class="hero">
+        <!-- La div .container a été retirée d'ici -->
+        <div class="hero-content">
+            <h1>Trouvez votre chez-vous,<br><span class="highlight">partout dans le monde</span></h1>
+            <p>Découvrez des hébergements uniques et des services locaux de confiance pour un séjour inoubliable.</p>
+            <div class="hero-actions">
+                <a href="#search-section" class="btn btn-accent">Explorer les logements</a>
+                <a href="pages/services.html" class="btn btn-outline-light">Découvrir les services</a>
+            </div>
+        </div>
+        <div class="scroll-indicator"></div>
+    </section>
+
+      <!-- Section Barre de Recherche -->
+<section id="search-section" class="search-bar-section">
+    <div class="container">
+        <h2 class="section-title">Rechercher un hébergement</h2>
+        <div class="search-container">
+            <form class="search-form-inner">
+                <div class="form-group">
+                    <label for="destination">Destination</label>
+                    <input type="text" id="destination" placeholder="Paris, Lyon, Nice...">
+                </div>
+                <div class="form-group">
+                    <label for="budget">Budget par nuit</label>
+                    <select id="budget">
+                        <option>Tous les prix</option>
+                        <option>Moins de 100€</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="type">Type de logement</label>
+                    <select id="type">
+                        <option>Tous les types</option>
+                        <option>Appartement</option>
+                        <option>Maison</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-accent">Rechercher</button>
+            </form>
+            <hr class="separator">
+            <div class="quick-filters">
+                <span>Filtres rapides:</span>
+                <a href="#" class="filter-link">WiFi</a>
+                <a href="#" class="filter-link">Piscine</a>
+                <a href="#" class="filter-link">Parking</a>
+                <a href="#" class="filter-link">Animaux acceptés</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+      <!-- Section Liste des Logements -->
+      <section class="accommodations-section">
+        <div class="container">
+          <h2>Hébergements populaires</h2>
+          <div id="accommodations-list" class="grid-layout">
+            <!-- Les cartes de logement seront injectées ici par JavaScript -->
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="main-footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-column">
+            <h4>Haven&Help</h4>
+            <p>
+              Votre plateforme de confiance pour louer un hébergement ou
+              réserver un service local.
+            </p>
+          </div>
+          <div class="footer-column">
+            <h4>Navigation</h4>
+            <ul>
+              <li><a href="#">Louer un Hébergement</a></li>
+              <li><a href="#">Réserver un Service</a></li>
+              <li><a href="#">Expériences</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Légal</h4>
+            <ul>
+              <li><a href="#">Conditions Générales</a></li>
+              <li><a href="#">Confidentialité</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Suivez-nous</h4>
+            <!-- Pour que les icônes s'affichent, il faudra une librairie comme FontAwesome ou des SVGs -->
+            <p>Facebook, Twitter, Instagram</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Haven & Help. Tous droits réservés.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+// END OF FILE: index.html
+
+//---> PATH: /home/atabong/Documents/projet/Raquelle/version_html/js/components/mobileMenu.js
+
+// Fichier : js/components/mobileMenu.js
+
+export function initMobileMenu() {
+  const toggleButton = document.getElementById("mobile-menu-toggle");
+  const mobileNav = document.getElementById("mobile-nav");
+  const iconMenu = toggleButton.querySelector(".icon-menu");
+  const iconClose = toggleButton.querySelector(".icon-close");
+
+  if (!toggleButton || !mobileNav) return;
+
+  toggleButton.addEventListener("click", () => {
+    const isOpen = mobileNav.classList.toggle("is-open");
+
+    if (isOpen) {
+      iconMenu.style.display = "none";
+      iconClose.style.display = "inline-block";
+    } else {
+      iconMenu.style.display = "inline-block";
+      iconClose.style.display = "none";
+    }
+  });
+}
+// END OF FILE: js/components/mobileMenu.js
+
+//---> PATH: /home/atabong/Documents/projet/Raquelle/version_html/js/main.js
+
+import { fetchData } from "./modules/dataLoader.js";
+import { initMobileMenu } from "./components/mobileMenu.js";
+
+document.addEventListener("DOMContentLoaded", () => {
+    // Initialisation du menu mobile
+  initMobileMenu();
+  const mobileMenuButton = document.getElementById("mobile-menu-toggle");
+  const mainNav = document.querySelector(".main-nav");
+  if (mobileMenuButton) {
+    mobileMenuButton.addEventListener("click", () => {
+      mainNav.classList.toggle("active");
+    });
+  }
+
+  // Charger et afficher les logements sur la page d'accueil
+  if (document.getElementById("accommodations-list")) {
+    loadAccommodations();
+  }
+});
+
+async function loadAccommodations() {
+  const accommodations = await fetchData("data/accommodations.json");
+  const container = document.getElementById("accommodations-list");
+
+  if (!container) return;
+
+  if (accommodations.length === 0) {
+    container.innerHTML = "<p>Aucun logement à afficher pour le moment.</p>";
+    return;
+  }
+
+  container.innerHTML = accommodations
+    .map(
+      (acc) => `
+        <div class="card accommodation-card">
+            <img src="../${acc.image}" alt="${acc.title}">
+            <div class="card-content">
+                <div class="card-header">
+                    <span class="card-type">${acc.type}</span>
+                    <span class="card-rating">⭐ ${acc.rating}</span>
+                </div>
+                <h3 class="card-title">${acc.title}</h3>
+                <p class="card-location">${acc.location}</p>
+                <div class="card-footer">
+                    <span class="card-price">${acc.price}€ / nuit</span>
+                    <a href="pages/detail-logement.html?id=${acc.id}" class="btn btn-sm">Voir</a>
+                </div>
+            </div>
+        </div>
+    `
+    )
+    .join("");
+}
+// END OF FILE: js/main.js
+
+//---> PATH: /home/atabong/Documents/projet/Raquelle/version_html/js/modules/dataLoader.js
+
+export async function fetchData(url) {
+  try {
+    const response = await fetch(url);
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    return await response.json();
+  } catch (error) {
+    console.error("Could not fetch data:", error);
+    return []; // Retourne un tableau vide en cas d'erreur
+  }
+}
+// END OF FILE: js/modules/dataLoader.js
+
+//---> PATH: /home/atabong/Documents/projet/Raquelle/version_html/pages/contact.html
+
+// END OF FILE: pages/contact.html
+
+//---> PATH: /home/atabong/Documents/projet/Raquelle/version_html/pages/detail-logement.html
+
+// END OF FILE: pages/detail-logement.html
+
+//---> PATH: /home/atabong/Documents/projet/Raquelle/version_html/pages/detail-service.html
+
+// END OF FILE: pages/detail-service.html
+
+//---> PATH: /home/atabong/Documents/projet/Raquelle/version_html/pages/logements.html
+
+// END OF FILE: pages/logements.html
+
+//---> PATH: /home/atabong/Documents/projet/Raquelle/version_html/pages/services.html
+
+// END OF FILE: pages/services.html
+
+//---> PATH: /home/atabong/Documents/projet/Raquelle/version_html/prompter.sh
+
+#!/bin/bash
+
+# --- Configuration ---
+
+# Default project path if none provided
+DEFAULT_PROJECT_PATH="."
+PROJECT_PATH=${1:-"$DEFAULT_PROJECT_PATH"}
+
+# Output file name (relative to PROJECT_PATH)
+OUTPUT_FILENAME="project_context.txt"
+
+# Directories to completely ignore (won't be traversed)
+EXCLUDE_DIRS_PATTERN=( \
+    ".*"            # All hidden folders (.git, .vscode, .idea, .svn, etc.)
+    "node_modules"
+    "vendor"        # PHP Composer
+    "build"
+    "dist"
+    "target"        # Java/Rust build outputs
+    "__pycache__"   # Python cache
+    ".next"         # Next.js build output
+    "cache"         # General cache folders
+    "target"
+    "venv"
+    "storage"       # Laravel storage (often contains logs, cache, etc.)
+    # Add more directory names here if needed
+)
+
+# Specific file patterns to ignore within traversed directories
+EXCLUDE_FILES_PATTERN=( \
+    "*.log"
+    "*.jar"
+    "*.pdf"
+    "*.png"
+    "*.jpg"
+    "*.class"
+    "*.sqlite"
+    "*.csv"
+    "project_context.txt"
+    # ".env*"       # Consider if you NEED .env files; uncomment if NOT needed.
+    "package-lock.json"
+    "yarn.lock"
+    "composer.lock"
+    "*.ico"
+    "pnpm-lock.yaml"
+    # Add more file patterns here (e.g., "*.swp", "*.bak", "*.tmp")
+)
+
+# --- Script Logic ---
+
+# Attempt to get absolute path; exit if PROJECT_PATH is invalid early
+PROJECT_PATH=$(realpath "$PROJECT_PATH" 2>/dev/null)
+if [ $? -ne 0 ] || [ ! -d "$PROJECT_PATH" ]; then
+    echo "Error: Invalid or non-existent project directory specified." >&2 # Error to stderr
+    exit 1
+fi
+
+OUTPUT_FILE="$PROJECT_PATH/$OUTPUT_FILENAME"
+
+# --- Safety Check: Prevent overwriting the project directory itself ---
+# This is unlikely but guards against strange configurations
+if [ "$PROJECT_PATH" == "$OUTPUT_FILE" ]; then
+    echo "Error: Project directory path conflicts with output file name '$OUTPUT_FILENAME'." >&2
+    exit 1
+fi
+
+# Delete output file silently if it exists
+rm -f "$OUTPUT_FILE"
+
+# --- Build the find command ---
+# Uses arrays to construct the find command safely and avoid complex escaping issues with eval
+find_args=("$PROJECT_PATH")
+
+# Add directory prune conditions
+if [ ${#EXCLUDE_DIRS_PATTERN[@]} -gt 0 ]; then
+    find_args+=(\()
+    first_prune=true
+    for dir_pattern in "${EXCLUDE_DIRS_PATTERN[@]}"; do
+        if ! $first_prune; then
+            find_args+=(-o)
+        fi
+        find_args+=(-name "$dir_pattern" -type d)
+        first_prune=false
+    done
+    find_args+=(\) -prune -o) # Add the prune action and the OR for the next part
+fi
+
+# Add primary find conditions (type file, exclude output file, exclude patterns)
+find_args+=(\( -type f -not -path "$OUTPUT_FILE")
+if [ ${#EXCLUDE_FILES_PATTERN[@]} -gt 0 ]; then
+    for file_pattern in "${EXCLUDE_FILES_PATTERN[@]}"; do
+        find_args+=(-not -name "$file_pattern")
+    done
+fi
+find_args+=(-print \)) # Add the print action and close the group
+
+# --- Execute the find command and process results ---
+
+# Create the header in the output file
+{
+    echo "Project Context From: $PROJECT_PATH"
+    echo "Generated On: $(date)"
+    echo "==============================================="
+    echo "Ignored Directory Patterns: ${EXCLUDE_DIRS_PATTERN[*]}"
+    echo "Ignored File Patterns: ${EXCLUDE_FILES_PATTERN[*]}"
+    echo "==============================================="
+    echo ""
+} > "$OUTPUT_FILE"
+
+error_count=0
+# Use find with process substitution and sorting. Avoids eval.
+while IFS= read -r FILE_PATH; do
+    # Calculate relative path for cleaner output
+    RELATIVE_PATH="${FILE_PATH#"$PROJECT_PATH"/}"
+
+    # Append file info and content to the output file
+    {
+        # echo ""
+        # echo "// ==============================================="
+        # echo "---> FILE: $RELATIVE_PATH"
+        echo "//---> PATH: $FILE_PATH"
+        # echo "// ==============================================="
+        echo ""
+    } >> "$OUTPUT_FILE"
+
+    # Check if file is likely binary/non-text using 'file' command
+    # -b: omit filename; check for common non-text types
+    if file -b "$FILE_PATH" | grep -q -E 'binary|archive|compressed|image|font'; then
+        echo "[Non-text file (e.g., binary, data, compressed) - Contents omitted]" >> "$OUTPUT_FILE"
+    else
+        # Append text file content, redirect cat errors to stderr
+        if ! cat "$FILE_PATH" >> "$OUTPUT_FILE" 2> /dev/null; then # Hide cat errors from stdout
+             # Optionally log error to the output file itself, or just count it
+             echo "[Error reading file content for $RELATIVE_PATH]" >> "$OUTPUT_FILE"
+             ((error_count++))
+        fi
+    fi
+
+    {
+        # echo ""
+        echo "// END OF FILE: $RELATIVE_PATH"
+        echo ""
+    } >> "$OUTPUT_FILE"
+
+done < <(find "${find_args[@]}" | sort) # Execute find command using safe array expansion
+
+# Optionally report errors to stderr if any occurred
+if [ $error_count -gt 0 ]; then
+    echo "Warning: Encountered $error_count errors reading file contents during context generation." >&2
+    # Exit with a non-zero status to indicate partial success/warning
+    exit 1
+fi
+
+# Exit silently on success
+exit 0
+// END OF FILE: prompter.sh
+
+//---> PATH: /home/atabong/Documents/projet/Raquelle/version_html/readme.md
+
+// END OF FILE: readme.md
+
+//---> PATH: /home/atabong/Documents/projet/Raquelle/version_html/scss/components/_buttons.scss
+
+// Fichier : scss/components/_buttons.scss
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border: 1px solid transparent;
+  border-radius: $border-radius;
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
+  transition: $transition-smooth;
+  background-color: $primary-color;
+  color: $white;
+
+  &:hover {
+    background-color: darken($primary-color, 10%);
+    text-decoration: none;
+  }
+
+  // Variante "outline"
+  &.btn-outline {
+    background-color: transparent;
+    border-color: $primary-color;
+    color: $primary-color;
+
+    &:hover {
+      background-color: $primary-color;
+      color: $white;
+    }
+  }
+
+  // Variante "petite"
+  &.btn-sm {
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+  }
+}
+
+.btn.btn-accent {
+  background-color: $accent-color;
+  color: $white;
+  border-color: $accent-color;
+
+  &:hover {
+    background-color: darken($accent-color, 10%);
+    border-color: darken($accent-color, 10%);
+  }
+}
+
+.btn.btn-outline-light {
+  background-color: transparent;
+  border-color: rgba($white, 0.5);
+  color: $white;
+
+  &:hover {
+    background-color: rgba($white, 0.1);
+    border-color: $white;
+  }
+}
+// END OF FILE: scss/components/_buttons.scss
+
+//---> PATH: /home/atabong/Documents/projet/Raquelle/version_html/scss/components/_cards.scss
+
+.card {
+    background: $white;
+    border: 1px solid $gray-medium;
+    border-radius: $border-radius;
+    overflow: hidden;
+    box-shadow: $box-shadow;
+    transition: $transition-smooth;
+
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    }
+
+    img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+    
+    .card-content {
+        padding: 1rem;
+    }
+
+    .card-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 0.5rem;
+        color: $gray-dark;
+        font-size: 0.9rem;
+    }
+    
+    .card-title {
+        font-size: 1.2rem;
+        margin: 0.5rem 0;
+        color: $text-color;
+    }
+
+    .card-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 1rem;
+        padding-top: 1rem;
+        border-top: 1px solid $gray-medium;
+    }
+
+    .card-price {
+        font-weight: 700;
+        color: $primary-color;
+    }
+}// END OF FILE: scss/components/_cards.scss
+
+//---> PATH: /home/atabong/Documents/projet/Raquelle/version_html/scss/components/_footer.scss
+
+// Fichier : scss/components/_footer.scss
+
+.main-footer {
+  background-color: $primary-color;
+  color: rgba($white, 0.8);
+  padding: 4rem 0 2rem 0;
+  margin-top: 4rem;
+
+  .footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .footer-column {
+    h4 {
+      color: $white;
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      line-height: 1.7;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+
+    a {
+      color: rgba($white, 0.8);
+      text-decoration: none;
+      &:hover {
+        color: $white;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .footer-bottom {
+    border-top: 1px solid rgba($white, 0.2);
+    padding-top: 2rem;
+    text-align: center;
+    color: rgba($white, 0.6);
+  }
+}
+// END OF FILE: scss/components/_footer.scss
+
+//---> PATH: /home/atabong/Documents/projet/Raquelle/version_html/scss/components/_forms.scss
+
+// Fichier : scss/components/_forms.scss
+
+// La grande carte blanche qui contient tout
+.search-container {
+  background: $white;
+  padding: 1.5rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(40, 50, 60, 0.08);
+}
+
+// Le formulaire interne
+.search-form-inner {
+  display: grid;
+  // Crée des colonnes flexibles et une colonne fixe pour le bouton
+  grid-template-columns: 1fr 1fr 1fr auto;
+  gap: 1rem;
+  background: $gray-light;
+  padding: 1rem;
+  border-radius: 12px;
+  align-items: flex-end; // Aligne tout en bas
+}
+
+.form-group {
+  label {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: $gray-dark;
+    margin-bottom: 0.25rem;
+  }
+
+  input,
+  select {
+    width: 100%;
+    border: 1px solid $gray-medium;
+    border-radius: $border-radius;
+    padding: 0.75rem;
+    font-size: 1rem;
+    background: $white;
+
+    &:focus {
+      outline: none;
+      border-color: $primary-color;
+    }
+  }
+}
+
+// Ligne de séparation
+.separator {
+  border: none;
+  height: 1px;
+  background-color: $gray-medium;
+  margin: 1.5rem 0;
+}
+
+// Les filtres rapides
+.quick-filters {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+
+  span {
+    font-size: 0.9rem;
+    color: $gray-dark;
+  }
+}
+
+.filter-link {
+  font-size: 0.9rem;
+  color: $text-color;
+  padding: 0.25rem 0.5rem;
+  border-radius: $border-radius;
+  transition: $transition-smooth;
+  text-decoration: none;
+
+  &:hover {
+    background-color: $gray-light;
+  }
+}
+
+// --- Responsive pour la barre de recherche ---
+@media (max-width: $breakpoint-lg) {
+  .search-form-inner {
+    grid-template-columns: 1fr 1fr; // 2 colonnes sur tablette
+  }
+}
+
+@media (max-width: $breakpoint-md) {
+  .search-form-inner {
+    grid-template-columns: 1fr; // 1 colonne sur mobile
+    gap: 1.5rem;
+  }
+}
+// END OF FILE: scss/components/_forms.scss
+
+//---> PATH: /home/atabong/Documents/projet/Raquelle/version_html/scss/components/_header.scss
+
+// Fichier : scss/components/_header.scss
+
+.main-header {
+  // Changement pour un positionnement flottant
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  padding: 1rem 0;
+  // Effet de verre
+  background: rgba($white, 0.85);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid $gray-medium;
+  transition: $transition-smooth;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: $primary-color;
+    text-decoration: none;
+    span {
+      color: $accent-color;
+    }
+  }
+
+  .main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  .main-nav a {
+    text-decoration: none;
+    color: $text-color;
+    font-weight: 500;
+    transition: $transition-smooth;
+    
+    // Pour aligner icône et texte
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    // Style pour l'icône
+    i {
+      width: 16px;
+      height: 16px;
+    }
+
+    &:hover, &.active {
+      color: $primary-color;
+    }
+  }
+  
+  .mobile-menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  @media (max-width: $breakpoint-lg) { // Changé pour lg pour plus de marge
+      .main-nav, .header-actions {
+          display: none;
+      }
+      .mobile-menu-toggle {
+        display: flex; // Changez 'block' en 'flex' pour mieux centrer
+        align-items: center;
+        justify-content: center;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 0.5rem;
+
+        // Cible l'icône SVG générée par Lucide
+        svg {
+            width: 28px;
+            height: 28px;
+            color: $primary-color;
+        }
+    }
+  }
+}// END OF FILE: scss/components/_header.scss
+
+//---> PATH: /home/atabong/Documents/projet/Raquelle/version_html/scss/components/_mobile-nav.scss
+
+// Fichier : scss/components/_mobile-nav.scss
+
+.mobile-nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100vh;
+    background: $white;
+    z-index: 1000;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    box-shadow: -10px 0 30px rgba(0,0,0,0.1);
+
+    &.is-open {
+        transform: translateX(0);
+    }
+}
+
+.mobile-nav-header {
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid $gray-medium;
+}
+
+.mobile-nav-content {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.mobile-nav-links ul {
+    list-style: none;
+}
+
+.mobile-nav-links li {
+    margin-bottom: 0.5rem;
+}
+
+.mobile-nav-links a {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem;
+    border-radius: $border-radius;
+    font-weight: 500;
+    color: $text-color;
+
+    &.active {
+        background-color: $gray-light;
+        color: $primary-color;
+    }
+}
+
+.mobile-nav-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    border-top: 1px solid $gray-medium;
+    padding-top: 1.5rem;
+    margin-top: 1.5rem;
+
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+// END OF FILE: scss/components/_mobile-nav.scss
+
+//---> PATH: /home/atabong/Documents/projet/Raquelle/version_html/scss/core/_base.scss
+
+// Fichier : scss/core/_base.scss
+
+// --- Reset de base ---
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// --- Styles globaux du corps de la page ---
+body {
+  font-family: $font-family-base;
+  color: $text-color;
+  background-color: $white;
+  line-height: 1.6;
+}
+
+// --- Classe conteneur pour centrer le contenu ---
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+// --- Styles pour les liens ---
+a {
+  color: $primary-color;
+  text-decoration: none;
+  transition: $transition-smooth;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}// END OF FILE: scss/core/_base.scss
+
+//---> PATH: /home/atabong/Documents/projet/Raquelle/version_html/scss/core/_mixins.scss
+
+// END OF FILE: scss/core/_mixins.scss
+
+//---> PATH: /home/atabong/Documents/projet/Raquelle/version_html/scss/core/_variables.scss
+
+// --- Polices ---
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+$font-family-base: "Inter", sans-serif;
+
+// --- Couleurs (comme demandé) ---
+$primary-color: #003580; // Bleu foncé
+$accent-color: #f39c12; // Orange
+
+// --- Nuances ---
+$white: #ffffff;
+$black: #161a1d;
+$gray-light: #f8f9fa;
+$gray-medium: #e9ecef;
+$gray-dark: #6c757d;
+$text-color: #212529;
+
+// --- Design Tokens ---
+$border-radius: 8px;
+$box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+$transition-smooth: all 0.3s ease-in-out;
+
+// --- Breakpoints pour le responsive ---
+$breakpoint-md: 768px;
+$breakpoint-lg: 1024px;
+// END OF FILE: scss/core/_variables.scss
+
+//---> PATH: /home/atabong/Documents/projet/Raquelle/version_html/scss/main.scss
+
+// 1. Core (variables, fonctions, etc.)
+@import "core/variables";
+@import "core/mixins";
+@import "core/base";
+
+// 2. Components (éléments réutilisables)
+@import "components/buttons";
+@import "components/cards";
+@import "components/forms";
+@import "components/header";
+@import "components/mobile-nav";
+@import "components/footer";
+
+// 3. Pages (styles spécifiques à chaque page)
+@import "pages/home";
+// END OF FILE: scss/main.scss
+
+//---> PATH: /home/atabong/Documents/projet/Raquelle/version_html/scss/pages/_detail.scss
+
+// END OF FILE: scss/pages/_detail.scss
+
+//---> PATH: /home/atabong/Documents/projet/Raquelle/version_html/scss/pages/_home.scss
+
+.hero {
+  height: 100vh; // Prend toute la hauteur de l'écran
+  position: relative;
+  display: flex;
+  align-items: center; // Aligne le contenu verticalement au centre
+
+  // Superposition de l'image et du dégradé via un pseudo-élément
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    // IMPORTANT : Assurez-vous d'avoir une image de haute qualité à cet emplacement
+    background-image: linear-gradient(
+        90deg,
+        rgba($primary-color, 0.85) 0%,
+        rgba($primary-color, 0.5) 50%,
+        rgba($primary-color, 0.1) 100%
+      ),
+      url("../assets/images/hero-banner.jpg");
+    background-size: cover;
+    background-position: center;
+    z-index: 1; // Se place sous le contenu
+  }
+
+  .hero-content {
+    position: relative; // Pour se placer au-dessus du pseudo-élément
+    z-index: 2;
+    max-width: 800px;
+    color: $white;
+    // Ajoute de la marge pour décoller du bord gauche
+    padding-left: 5%;
+  }
+
+  h1 {
+    font-size: 4.5rem; // Très grand pour plus d'impact
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+    color: $white;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+
+    // La classe .highlight remplace le span simple pour le style orange
+    .highlight {
+      color: $accent-color;
+    }
+  }
+
+  p {
+    font-size: 1.2rem;
+    color: rgba($white, 0.9);
+    max-width: 500px;
+    margin-bottom: 2rem;
+  }
+
+  .hero-actions {
+    display: flex;
+    gap: 1rem;
+  }
+
+  // Pour l'indicateur de scroll en bas
+  .scroll-indicator {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 24px;
+    height: 40px;
+    border: 2px solid rgba($white, 0.5);
+    border-radius: 20px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 8px;
+      width: 4px;
+      height: 8px;
+      background: rgba($white, 0.5);
+      border-radius: 2px;
+      transform: translateX(-50%);
+      animation: bounce 2s infinite;
+    }
+  }
+}
+
+// Animation pour le scroll
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translate(-50%, 0);
+  }
+  40% {
+    transform: translate(-50%, 10px);
+  }
+  60% {
+    transform: translate(-50%, 5px);
+  }
+}
+
+.search-bar-section {
+  padding: 5rem 0;
+  background-color: $gray-light;
+}
+
+// Titre de section centré
+.section-title {
+  text-align: center;
+  font-size: 2.25rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  color: $primary-color;
+}
+
+.search-bar-section {
+  // Placer la barre de recherche sur la bannière
+  transform: translateY(-50%);
+
+  .search-form {
+    background: $white;
+    display: flex;
+    gap: 0.5rem;
+    padding: 1rem;
+    border-radius: $border-radius;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    width: fit-content;
+    margin: 0 auto;
+  }
+}
+
+.accommodations-section {
+  padding: 2rem 0 4rem 0; // Ajout d'espace
+
+  h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+}
+
+.grid-layout {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+// Responsive pour la bannière et la recherche
+@media (max-width: $breakpoint-md) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .search-bar-section {
+    transform: translateY(-25%);
+    .search-form {
+      flex-direction: column;
+      width: 90%;
+
+      input,
+      select,
+      button {
+        width: 100%;
+      }
+    }
+  }
+}
+// END OF FILE: scss/pages/_home.scss
+
+//---> PATH: /home/atabong/Documents/projet/Raquelle/version_html/scss/pages/_listimgs.scss
+
+// END OF FILE: scss/pages/_listimgs.scss
+

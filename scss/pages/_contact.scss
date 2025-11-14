@@ -1,0 +1,95 @@
+@use "../core/variables" as *;
+
+.contact-page-main {
+  padding-top: 80px; // Espace pour le header fixe
+}
+
+.contact-hero {
+  background-color: $gray-light;
+  padding: 4rem 0;
+  text-align: center;
+  border-bottom: 1px solid $gray-medium;
+
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+  p {
+    font-size: 1.1rem;
+    color: $gray-dark;
+  }
+}
+
+.contact-content-section {
+  padding: 4rem 0;
+}
+
+.contact-layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 3rem;
+}
+
+.contact-form-container,
+.contact-info-container {
+  h2 {
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+  }
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  .btn {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+  }
+}
+
+.contact-info-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.contact-info-card {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  background: $gray-light;
+  padding: 1.5rem;
+  border-radius: 12px;
+
+  .icon-wrapper {
+    flex-shrink: 0;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba($primary-color, 0.1);
+    border-radius: 50%;
+    color: $primary-color;
+  }
+
+  strong {
+    display: block;
+    margin-bottom: 0.25rem;
+  }
+
+  p {
+    color: $gray-dark;
+    margin: 0;
+  }
+}
+
+// Responsive pour la page contact
+@media (max-width: $breakpoint-lg) {
+  .contact-layout {
+    grid-template-columns: 1fr; // Passe à une seule colonne
+  }
+}

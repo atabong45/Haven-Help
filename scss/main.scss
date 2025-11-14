@@ -1,0 +1,20 @@
+// On utilise la nouvelle syntaxe @use
+@use "core/variables";
+@use "core/mixins";
+@use "core/base";
+
+@use "components/buttons";
+@use "components/cards";
+@use "components/forms";
+@use "components/header";
+@use "components/mobile-nav";
+@use "components/footer";
+@use "components/whatsapp-fab";
+@use "components/reviews";
+
+@use "pages/home";
+@use "pages/detail";
+@use "pages/services";
+@use "pages/detail-services";
+@use "pages/logements";
+@use "pages/contact";

@@ -1,0 +1,33 @@
+@use "../core/variables" as *;
+
+.whatsapp-fab {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 999;
+
+  width: 60px;
+  height: 60px;
+  background-color: $whatsapp-color;
+  color: $white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease-in-out;
+  text-decoration: none; // Pour s'assurer qu'il n'est pas souligné
+
+  // Style de l'icône à l'intérieur
+  svg {
+    width: 32px;
+    height: 32px;
+  }
+
+  &:hover {
+    transform: scale(1.1);
+    text-decoration: none; // Reste non souligné au survol
+  }
+}

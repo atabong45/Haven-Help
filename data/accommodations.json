@@ -1,0 +1,194 @@
+[
+  {
+    "id": 1,
+    "title": "Appartement moderne au centre-ville",
+    "type": "Appartement",
+    "location": "Yaoundé, Bastos",
+    "price": "75 000",
+    "rating": 4.8,
+    "image": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?q=80&w=800&auto=format&fit=crop",
+    "guests": 4,
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "description": "Appartement de haut standing situé dans le quartier résidentiel de Bastos. Profitez du confort moderne, d'une cuisine équipée et d'un accès facile aux ambassades et restaurants chics de la capitale.",
+    "amenities": [
+      "Wifi",
+      "Climatisation",
+      "Cuisine",
+      "Parking Sécurisé",
+      "Gardien 24/7"
+    ],
+    "gallery": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?q=80&w=1200&auto=format&fit=crop"
+    ],
+    "mapIframe": "<iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15923.11187428059!2d11.500854855428458!3d3.882943146193796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x108bcf44f1b7473b%3A0x63351a31d7e22115!2sBastos%2C%20Yaound%C3%A9%2C%20Cameroon!5e0!3m2!1sen!2sus!4v1670000000001!5m2!1sen!2sus' width='600' height='450' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>"
+  },
+  {
+    "id": 2,
+    "title": "Villa de luxe avec piscine à Bonapriso",
+    "type": "Villa",
+    "location": "Douala, Bonapriso",
+    "price": "295 000",
+    "rating": 4.9,
+    "image": "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?q=80&w=800&auto=format&fit=crop",
+    "guests": 8,
+    "bedrooms": 4,
+    "bathrooms": 3,
+    "description": "Superbe villa de 200m² nichée dans le quartier chic de Bonapriso. Cette propriété de charme dispose de 4 chambres spacieuses, d'un grand salon et d'une magnifique piscine privée. Parfait pour un séjour de luxe en famille ou entre amis.",
+    "amenities": [
+      "Wifi",
+      "Piscine",
+      "Parking",
+      "Climatisation",
+      "Cuisine",
+      "Jardin",
+      "Barbecue"
+    ],
+    "gallery": [
+      "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1613490493576-7fde63acd811?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?q=80&w=1200&auto=format&fit=crop"
+    ],
+    "mapIframe": "<iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15919.55836224131!2d9.691761655438222!3d4.04169999596396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10610d48951e0165%3A0x42921223f2fc6103!2sBonapriso%2C%20Douala%2C%20Cameroon!5e0!3m2!1sen!2sus!4v1670000000002!5m2!1sen!2sus' width='600' height='450' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>"
+  },
+  {
+    "id": 3,
+    "title": "Bungalow en bord de mer",
+    "type": "Bungalow",
+    "location": "Kribi, Plage",
+    "price": "60 000",
+    "rating": 4.5,
+    "image": "https://images.unsplash.com/photo-1616594039964-ae9021a400a0?q=80&w=800&auto=format&fit=crop",
+    "guests": 2,
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "description": "Réveillez-vous au son des vagues dans ce charmant bungalow situé directement sur la plage de sable fin de Kribi. Idéal pour une escapade romantique ou pour se ressourcer loin de l'agitation de la ville.",
+    "amenities": ["Accès Plage", "Climatisation", "Terrasse", "Cuisine"],
+    "gallery": [
+      "https://images.unsplash.com/photo-1616594039964-ae9021a400a0?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1540541338287-417002075841?q=80&w=1200&auto=format&fit=crop"
+    ],
+    "mapIframe": "<iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31887.89201550926!2d9.902409899999996!3d2.9341492!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1060c5a7a7d4d4b3%3A0x9484f27521e33d25!2sKribi%2C%20Cameroon!5e0!3m2!1sen!2sus!4v1670000000003!5m2!1sen!2sus' width='600' height='450' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>"
+  },
+  {
+    "id": 4,
+    "title": "Maison d'hôtes près des chutes",
+    "type": "Maison",
+    "location": "Edéa, Chutes de la Sanaga",
+    "price": "45 000",
+    "rating": 4.6,
+    "image": "https://images.unsplash.com/photo-1558036117-15d82a90b9b1?q=80&w=800&auto=format&fit=crop",
+    "guests": 6,
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "description": "Séjournez dans une maison de campagne tranquille à quelques minutes des impressionnantes Chutes de la Sanaga. Un cadre parfait pour les amoureux de la nature et les randonneurs.",
+    "amenities": ["Jardin", "Cuisine", "Parking", "Barbecue"],
+    "gallery": [
+      "https://images.unsplash.com/photo-1558036117-15d82a90b9b1?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1542314831-068cd1dbb5eb?q=80&w=1200&auto=format&fit=crop"
+    ],
+    "mapIframe": "<iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63683.0857216688!2d10.10098925345703!3d3.791523456381206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1060e12d1637d45f%3A0x1d46f55e378c56d7!2zRWRlYSwgQ2FtZXJvb24!5e0!3m2!1sen!2sus!4v1670000000004!5m2!1sen!2sus' width='600' height='450' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>"
+  },
+  {
+    "id": 5,
+    "title": "Suite exécutive à l'Hôtel Hilton",
+    "type": "Hôtel",
+    "location": "Yaoundé, Centre-ville",
+    "price": "150 000",
+    "rating": 5.0,
+    "image": "https://images.unsplash.com/photo-1613553460337-134267e8c603?q=80&w=800&auto=format&fit=crop",
+    "guests": 2,
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "description": "Vivez une expérience de luxe inégalée dans la suite exécutive de l'Hôtel Hilton. Vue panoramique sur la ville, service de chambre 24h/24 et accès à la piscine et au centre de fitness.",
+    "amenities": [
+      "Wifi",
+      "Piscine",
+      "Room Service",
+      "Climatisation",
+      "Salle de sport"
+    ],
+    "gallery": [
+      "https://images.unsplash.com/photo-1613553460337-134267e8c603?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1542314831-068cd1dbb5eb?q=80&w=1200&auto=format&fit=crop"
+    ],
+    "mapIframe": "<iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3980.758369655613!2d11.512160974864112!3d3.861788296213601!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x108bcf7b9a7b9b3d%3A0x8979b9b3f3b3b3b3!2sHilton%20Yaounde!5e0!3m2!1sen!2scm!4v1668431891234!5m2!1sen!2scm' width='600' height='450' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>"
+  },
+  {
+    "id": 6,
+    "title": "Résidence meublée à Akwa",
+    "type": "Appartement",
+    "location": "Douala, Akwa",
+    "price": "50 000",
+    "rating": 4.8,
+    "image": "https://images.unsplash.com/photo-1502672260066-6bc35f0ce33d?q=80&w=800&auto=format&fit=crop",
+    "guests": 3,
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "description": "Appartement entièrement meublé et équipé au cœur du quartier des affaires d'Akwa. Idéal pour les voyages d'affaires ou les courts séjours, avec un accès direct aux banques et commerces.",
+    "amenities": ["Wifi", "Climatisation", "Cuisine", "Gardien 24/7"],
+    "gallery": [
+      "https://images.unsplash.com/photo-1502672260066-6bc35f0ce33d?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?q=80&w=1200&auto=format&fit=crop"
+    ],
+    "mapIframe": "<iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15919.64500305884!2d9.70208155543822!3d4.048348895960815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10610d732b8a07e1%3A0x7311f44538870129!2sAkwa%2C%20Douala%2C%20Cameroon!5e0!3m2!1sen!2sus!4v1670000000005!5m2!1sen!2sus' width='600' height='450' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>"
+  },
+  {
+    "id": 7,
+    "title": "Appartement Haussmannien typique",
+    "type": "Appartement",
+    "location": "Yaoundé, Hippodrome",
+    "price": "90 000",
+    "rating": 4.7,
+    "image": "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?q=80&w=800&auto=format&fit=crop",
+    "guests": 5,
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "description": "Un appartement spacieux au style classique, situé dans le quartier animé de l'Hippodrome. Hauts plafonds, moulures et un grand balcon offrant une vue sur la ville.",
+    "amenities": ["Wifi", "Ventilateurs", "Cuisine", "Balcon"],
+    "gallery": [
+      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1493809842364-78817add7ffb?q=80&w=1200&auto=format&fit=crop"
+    ],
+    "mapIframe": "<iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15923.189531986466!2d11.50517565542846!3d3.85698034622329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x108bcf69a4c5a975%3A0x6d9f67a6d888f411!2sHippodrome%2C%20Yaound%C3%A9%2C%20Cameroon!5e0!3m2!1sen!2sus!4v1670000000006!5m2!1sen!2sus' width='600' height='450' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>"
+  },
+  {
+    "id": 8,
+    "title": "Maison d'architecte vue sur Mont Fébé",
+    "type": "Maison",
+    "location": "Yaoundé, Mont Fébé",
+    "price": "220 000",
+    "rating": 4.9,
+    "image": "https://images.unsplash.com/photo-1570129477492-45c003edd2be?q=80&w=800&auto=format&fit=crop",
+    "guests": 7,
+    "bedrooms": 4,
+    "bathrooms": 3,
+    "description": "Maison moderne et épurée avec de grandes baies vitrées offrant une vue imprenable sur le Mont Fébé. Profitez du jardin luxuriant et de la tranquillité des hauteurs de Yaoundé.",
+    "amenities": ["Wifi", "Jardin", "Cuisine", "Parking", "Climatisation"],
+    "gallery": [
+      "https://images.unsplash.com/photo-1570129477492-45c003edd2be?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1200&auto=format&fit=crop"
+    ],
+    "mapIframe": "<iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3980.825227749033!2d11.481232874864073!3d3.844788396229415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x108bcfb5c3b6522b%3A0x50a9c687f83060c5!2sMont%20Febey%2C%20Yaound%C3%A9%2C%20Cameroon!5e0!3m2!1sen!2sus!4v1670000000007!5m2!1sen!2sus' width='600' height='450' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>"
+  },
+  {
+    "id": 9,
+    "title": "Studio équipé à Kotto",
+    "type": "Studio",
+    "location": "Douala, Kotto",
+    "price": "35 000",
+    "rating": 4.9,
+    "image": "https://images.unsplash.com/photo-1551524164-687a55dd1126?q=80&w=800&auto=format&fit=crop",
+    "guests": 2,
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "description": "Studio fonctionnel et sécurisé dans le quartier résidentiel de Kotto. Parfait pour les voyageurs seuls ou les couples. Proche des commodités et des axes routiers.",
+    "amenities": ["Wifi", "Cuisine", "Climatisation", "Gardien 24/7"],
+    "gallery": [
+      "https://images.unsplash.com/photo-1551524164-687a55dd1126?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1600585152225-357ea60c7e84?q=80&w=1200&auto=format&fit=crop"
+    ],
+    "mapIframe": "<iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31838.25301880949!2d9.73976865344726!3d4.092415145892044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10610e0c03c5822f%3A0x1338805f2e604313!2sKotto%2C%20Douala%2C%20Cameroon!5e0!3m2!1sen!2sus!4v1670000000008!5m2!1sen!2sus' width='600' height='450' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>"
+  }
+]

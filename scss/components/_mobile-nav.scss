@@ -1,0 +1,93 @@
+@use "../core/variables" as *;
+
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100vh;
+  background: $white;
+  z-index: 1000;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  box-shadow: -10px 0 30px rgba(0, 0, 0, 0.1);
+
+  &.is-open {
+    transform: translateX(0);
+  }
+}
+
+.mobile-nav-header {
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid $gray-medium;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.mobile-nav-content {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.mobile-nav-links ul {
+  list-style: none;
+}
+
+.mobile-nav-links li {
+  margin-bottom: 0.5rem;
+}
+
+.mobile-nav-links a {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem;
+  border-radius: $border-radius;
+  font-weight: 500;
+  color: $text-color;
+
+  &.active {
+    background-color: $gray-light;
+    color: $primary-color;
+  }
+}
+
+.mobile-nav-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  border-top: 1px solid $gray-medium;
+  padding-top: 1.5rem;
+  margin-top: 1.5rem;
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.mobile-nav-close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  line-height: 0; // Empêche un espacement bizarre
+
+  svg {
+    width: 28px;
+    height: 28px;
+    color: $text-color;
+    transition: color 0.2s;
+  }
+
+  &:hover svg {
+    color: $primary-color;
+  }
+}

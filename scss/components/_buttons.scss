@@ -1,0 +1,62 @@
+@use "../core/variables" as *;
+@use "sass:color";
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border: 1px solid transparent;
+  border-radius: $border-radius;
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
+  transition: $transition-smooth;
+  background-color: $primary-color;
+  color: $white;
+
+  &:hover {
+    // ÉTAPE 2 : On remplace darken() par la nouvelle fonction
+    background-color: color.adjust($primary-color, $lightness: -10%);
+    text-decoration: none;
+  }
+
+  // Variante "outline"
+  &.btn-outline {
+    background-color: transparent;
+    border-color: $primary-color;
+    color: $primary-color;
+
+    &:hover {
+      background-color: $primary-color;
+      color: $white;
+    }
+  }
+
+  // Variante "petite"
+  &.btn-sm {
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+  }
+}
+
+.btn.btn-accent {
+  background-color: $accent-color;
+  color: $white;
+  border-color: $accent-color;
+
+  &:hover {
+    // On remplace aussi ici
+    background-color: color.adjust($accent-color, $lightness: -10%);
+    border-color: color.adjust($accent-color, $lightness: -10%);
+  }
+}
+
+.btn.btn-outline-light {
+  background-color: transparent;
+  border-color: rgba($white, 0.5);
+  color: $white;
+
+  &:hover {
+    background-color: rgba($white, 0.1);
+    border-color: $white;
+  }
+}

@@ -1,0 +1,38 @@
+@use "variables" as *;
+
+// --- Reset de base ---
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// --- Styles globaux du corps de la page ---
+body {
+  font-family: $font-family-base;
+  color: $text-color;
+  background-color: $white;
+  line-height: 1.6;
+}
+
+// --- Classe conteneur pour centrer le contenu ---
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+// --- Styles pour les liens ---
+a {
+  color: $primary-color;
+  text-decoration: none;
+  transition: $transition-smooth;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

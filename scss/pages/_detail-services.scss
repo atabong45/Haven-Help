@@ -1,0 +1,202 @@
+@use "../core/variables" as *;
+
+.service-image-container {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 2rem;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .service-tag {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    background: rgba($black, 0.6);
+    color: $white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 6px;
+    font-size: 0.9rem;
+  }
+}
+
+// --- Infos du prestataire ---
+.rating-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: $gray-dark;
+  margin-bottom: 1.5rem;
+  i {
+    color: $accent-color;
+  }
+}
+
+.provider-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: $gray-light;
+  padding: 1rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+}
+
+.provider-avatar {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: $primary-color;
+  color: $white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.provider-name {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.certified-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  color: #25d366; // Couleur verte (type WhatsApp)
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+// --- Formulaire de devis ---
+.devis-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  .form-group {
+    margin-bottom: 0; // On enlève la marge de base pour utiliser le gap
+  }
+
+  textarea {
+    width: 100%;
+    border: 1px solid $gray-medium;
+    border-radius: $border-radius;
+    padding: 0.75rem;
+    font-size: 1rem;
+    font-family: $font-family-base;
+    resize: vertical;
+  }
+}
+
+.booking-card {
+  // On surcharge le style hérité pour un look plus doux
+  box-shadow: 0 10px 30px rgba(40, 50, 60, 0.08);
+  background: $white; // S'assurer que le fond est blanc
+}
+
+.booking-price {
+  font-size: 1.5rem; // Un peu plus grand
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 2rem;
+
+  span {
+    // On enlève le span car le prix est géré en une seule fois
+    font-size: 2rem;
+  }
+}
+
+// --- Nouveaux styles pour le formulaire, plus épurés ---
+.devis-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem; // Plus d'espace entre les champs
+
+  .form-group {
+    margin-bottom: 0;
+
+    label {
+      font-size: 0.8rem;
+      color: $gray-dark;
+      margin-bottom: 0.25rem;
+    }
+
+    input,
+    textarea {
+      background-color: $gray-light; // Fond gris clair
+      border: 1px solid $gray-light; // Bordure de la même couleur
+      border-radius: 8px;
+      padding: 0.8rem 1rem;
+      font-size: 1rem;
+
+      &:focus {
+        background-color: $white;
+        border-color: $primary-color;
+      }
+    }
+    // Style spécifique pour l'input date pour simuler le placeholder
+    input[type="date"] {
+      position: relative;
+    }
+  }
+
+  .btn {
+    margin-top: 1rem;
+    padding: 1rem; // Bouton plus grand
+    font-size: 1rem;
+    font-weight: 600;
+  }
+}
+
+.provider-contact {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid $gray-medium;
+  display: flex;
+  justify-content: center; // Centrer les icônes
+  align-items: center;
+  gap: 1.5rem;
+
+  a {
+    color: $gray-dark;
+    &:hover {
+      color: $primary-color;
+    }
+    // On cache le texte pour ne garder que l'icône
+    span {
+      display: none;
+    }
+  }
+}
+
+// --- Section Certifications ---
+.certifications-section {
+  border-top: 1px solid $gray-medium;
+  padding-top: 2rem;
+  margin-top: 2rem;
+
+  h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .certifications-list {
+    list-style: none;
+
+    li {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+  }
+}

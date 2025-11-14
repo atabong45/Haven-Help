@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contactez-nous - Haven & Help</title>
+    <!-- Chemins absolus pour les ressources -->
+    <link rel="stylesheet" href="/css/main.css" />
+    <script src="https://unpkg.com/lucide@latest" defer></script>
+    <script src="/js/global.js" type="module" defer></script>
+    <!-- Pas besoin de script JS spécifique pour cette page pour l'instant -->
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="container">
+        <a href="/index.html" class="logo">Haven<span>&</span>Help</a>
+        <nav class="main-nav">
+          <ul>
+            <!-- Ajout des icônes et de la classe "active" pour la page actuelle -->
+            <li>
+              <a href="/pages/logements.html"
+                ><i data-lucide="home"></i>Hébergement</a
+              >
+            </li>
+            <li>
+              <a href="/pages/services.html"
+                ><i data-lucide="wrench"></i> Service</a
+              >
+            </li>
+            <li>
+              <a href="#"><i data-lucide="compass"></i> Expériences</a>
+            </li>
+            <li>
+              <a href="/pages/contact.html" class="active"
+                ><i data-lucide="mail"></i> Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="header-actions">
+          <button class="btn btn-outline">Connexion</button>
+          <button class="btn btn-accent">Inscription</button>
+          <!-- Nouvelle classe ici -->
+        </div>
+        <button id="mobile-menu-toggle" class="mobile-menu-toggle">
+          <span class="icon-menu">
+            <i data-lucide="menu"></i>
+          </span>
+        </button>
+      </div>
+    </header>
+
+    <!-- MENU MOBILE -->
+    <div id="mobile-nav" class="mobile-nav">
+      <div class="mobile-nav-header">
+        <a href="/index.html" class="logo">Haven<span>&</span>Help</a>
+        <button
+          id="mobile-nav-close-btn"
+          class="mobile-nav-close"
+          aria-label="Fermer le menu"
+        >
+          <i data-lucide="x"></i>
+        </button>
+      </div>
+      <div class="mobile-nav-content">
+        <nav class="mobile-nav-links">
+          <ul>
+            <li>
+              <a href="/pages/logements.html"
+                ><i data-lucide="home"></i>Hébergement</a
+              >
+            </li>
+            <li>
+              <a href="/pages/services.html"
+                ><i data-lucide="wrench"></i>Service</a
+              >
+            </li>
+            <li>
+              <a href="#"><i data-lucide="compass"></i> Expériences</a>
+            </li>
+            <li>
+              <a href="/pages/contact.html" class="active"
+                ><i data-lucide="mail"></i> Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="mobile-nav-actions">
+          <a href="#" class="btn btn-outline">Connexion</a>
+          <a href="#" class="btn btn-accent">Inscription</a>
+        </div>
+      </div>
+    </div>
+    <!-- FIN DU MENU MOBILE -->
+    <main class="contact-page-main">
+      <!-- Section Titre -->
+      <section class="contact-hero">
+        <div class="container">
+          <h1>Contactez-nous</h1>
+          <p>
+            Une question ? Une suggestion ? Notre équipe est à votre écoute.
+          </p>
+        </div>
+      </section>
+
+      <!-- Section Contenu Principal -->
+      <section class="contact-content-section">
+        <div class="container">
+          <div class="contact-layout">
+            <!-- COLONNE GAUCHE : FORMULAIRE -->
+            <div class="contact-form-container">
+              <h2>Envoyez-nous un message</h2>
+              <form class="contact-form">
+                <div class="form-group">
+                  <label for="nom">Nom complet *</label>
+                  <input
+                    type="text"
+                    id="nom"
+                    placeholder="Ex: Jean Dupont"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="email">Email *</label>
+                  <input
+                    type="email"
+                    id="email"
+                    placeholder="Ex: jean.dupont@email.com"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="sujet">Sujet</label>
+                  <input
+                    type="text"
+                    id="sujet"
+                    placeholder="Ex: Question sur un logement"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="message">Message *</label>
+                  <textarea
+                    id="message"
+                    rows="5"
+                    placeholder="Votre message ici..."
+                    required
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn btn-accent">
+                  Envoyer le message
+                </button>
+              </form>
+            </div>
+
+            <!-- COLONNE DROITE : INFORMATIONS -->
+            <div class="contact-info-container">
+              <h2>Nos coordonnées</h2>
+              <div class="contact-info-card">
+                <div class="icon-wrapper"><i data-lucide="phone"></i></div>
+                <div class="info-text">
+                  <strong>Par téléphone</strong>
+                  <p>+237 655 443 322</p>
+                </div>
+              </div>
+              <div class="contact-info-card">
+                <div class="icon-wrapper"><i data-lucide="mail"></i></div>
+                <div class="info-text">
+                  <strong>Par email</strong>
+                  <p>contact@havenhelp.cm</p>
+                </div>
+              </div>
+              <div class="contact-info-card">
+                <div class="icon-wrapper"><i data-lucide="map-pin"></i></div>
+                <div class="info-text">
+                  <strong>Notre bureau</strong>
+                  <p>Rue Njo-Njo, Bonapriso, Douala</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- BOUTON WHATSAPP FLOTTANT -->
+    <a
+      href="https://wa.me/33612345678?text=Bonjour%2C%20j'aimerais%20obtenir%20plus%20d'informations."
+      class="whatsapp-fab"
+      target="_blank"
+      aria-label="Contacter le support sur WhatsApp"
+    >
+      <i data-lucide="message-circle"></i>
+    </a>
+    <!-- FIN DU BOUTON WHATSAPP -->
+
+    <footer class="main-footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-column">
+            <h4>Haven&Help</h4>
+            <p>
+              Votre plateforme de confiance pour louer un hébergement ou
+              réserver un service local.
+            </p>
+          </div>
+          <div class="footer-column">
+            <h4>Navigation</h4>
+            <ul>
+              <li><a href="#">Louer un Hébergement</a></li>
+              <li><a href="#">Réserver un Service</a></li>
+              <li><a href="#">Expériences</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Légal</h4>
+            <ul>
+              <li><a href="#">Conditions Générales</a></li>
+              <li><a href="#">Confidentialité</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Suivez-nous</h4>
+            <!-- Pour que les icônes s'affichent, il faudra une librairie comme FontAwesome ou des SVGs -->
+            <p>Facebook, Twitter, Instagram</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Haven & Help. Tous droits réservés.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trouver un Service - Haven & Help</title>
+    <link rel="stylesheet" href="/css/main.css" />
+    <script src="https://unpkg.com/lucide@latest" defer></script>
+    <script src="/js/services.js" type="module" defer></script>
+    <script src="/js/global.js" type="module" defer></script>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="container">
+        <a href="/index.html" class="logo">Haven<span>&</span>Help</a>
+        <nav class="main-nav">
+          <ul>
+            <!-- Ajout des icônes et de la classe "active" pour la page actuelle -->
+            <li>
+              <a href="/pages/logements.html" 
+                ><i data-lucide="home"></i>Hébergement</a
+              >
+            </li>
+            <li>
+              <a href="/pages/services.html" class="active"
+                ><i data-lucide="wrench"></i> Service</a
+              >
+            </li>
+            <li>
+              <a href="#"><i data-lucide="compass"></i> Expériences</a>
+            </li>
+            <li>
+              <a href="/pages/contact.html"><i data-lucide="mail"></i> Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header-actions">
+          <button class="btn btn-outline">Connexion</button>
+          <button class="btn btn-accent">Inscription</button>
+          <!-- Nouvelle classe ici -->
+        </div>
+        <button id="mobile-menu-toggle" class="mobile-menu-toggle">
+          <span class="icon-menu">
+            <i data-lucide="menu"></i>
+          </span>
+        </button>
+      </div>
+    </header>
+
+    <!-- MENU MOBILE -->
+    <div id="mobile-nav" class="mobile-nav">
+      <div class="mobile-nav-header">
+        <a href="/index.html" class="logo">Haven<span>&</span>Help</a>
+        <button
+          id="mobile-nav-close-btn"
+          class="mobile-nav-close"
+          aria-label="Fermer le menu"
+        >
+          <i data-lucide="x"></i>
+        </button>
+      </div>
+      <div class="mobile-nav-content">
+        <nav class="mobile-nav-links">
+          <ul>
+            <li>
+              <a href="/pages/logements.html" 
+                ><i data-lucide="home"></i>Hébergement</a
+              >
+            </li>
+            <li>
+              <a href="/pages/services.html" class="active"
+                ><i data-lucide="wrench"></i>Service</a
+              >
+            </li>
+            <li>
+              <a href="#"><i data-lucide="compass"></i> Expériences</a>
+            </li>
+            <li>
+              <a href="/pages/contact.html"><i data-lucide="mail"></i> Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="mobile-nav-actions">
+          <a href="#" class="btn btn-outline">Connexion</a>
+          <a href="#" class="btn btn-accent">Inscription</a>
+        </div>
+      </div>
+    </div>
+    <!-- FIN DU MENU MOBILE -->
+
+    <main class="services-page-main">
+      <div class="container">
+        <div class="services-page-layout">
+          <!-- COLONNE DE GAUCHE : FILTRES -->
+          <aside class="filters-panel">
+            <div class="filters-header">
+              <h3>Filtres</h3>
+              <button class="close-filters-btn" aria-label="Fermer les filtres">
+                <i data-lucide="x"></i>
+              </button>
+            </div>
+
+            <div class="filter-group">
+              <h4>Catégorie</h4>
+              <div id="category-filters">
+                <!-- Les catégories seront injectées par JS -->
+              </div>
+            </div>
+
+            <div class="filter-group">
+              <h4>Note minimale</h4>
+              <div class="rating-filter">
+                <input
+                  type="range"
+                  id="rating-filter"
+                  min="0"
+                  max="5"
+                  value="0"
+                  step="0.5"
+                />
+                <div class="rating-value"><span>0</span> étoile et plus</div>
+              </div>
+            </div>
+
+            <div class="filter-group">
+              <h4>Type de tarification</h4>
+              <div id="price-type-filters">
+                <div class="radio-option">
+                  <input
+                    type="radio"
+                    id="price-all"
+                    name="priceType"
+                    value="all"
+                    checked
+                  />
+                  <label for="price-all">Tous</label>
+                </div>
+                <div class="radio-option">
+                  <input
+                    type="radio"
+                    id="price-hourly"
+                    name="priceType"
+                    value="heure"
+                  />
+                  <label for="price-hourly">Tarif horaire</label>
+                </div>
+                <div class="radio-option">
+                  <input
+                    type="radio"
+                    id="price-flat"
+                    name="priceType"
+                    value="forfait"
+                  />
+                  <label for="price-flat">Forfait</label>
+                </div>
+              </div>
+            </div>
+
+            <button class="btn btn-outline" id="reset-filters">
+              Réinitialiser les filtres
+            </button>
+          </aside>
+
+          <!-- COLONNE DE DROITE : RÉSULTATS -->
+          <div class="results-content">
+            <div class="results-header">
+              <input
+                type="search"
+                id="search-input"
+                placeholder="Rechercher un service ou prestataire..."
+              />
+              <button class="mobile-filter-btn">
+                <i data-lucide="filter"></i> Filtres
+              </button>
+            </div>
+            <p class="results-count">
+              <span id="service-count">0</span> services disponibles
+            </p>
+            <div id="services-list" class="grid-layout">
+              <!-- Les cartes de service seront injectées ici par JS -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- BOUTON WHATSAPP FLOTTANT -->
+    <a
+      href="https://wa.me/33612345678?text=Bonjour%2C%20j'aimerais%20obtenir%20plus%20d'informations."
+      class="whatsapp-fab"
+      target="_blank"
+      aria-label="Contacter le support sur WhatsApp"
+    >
+      <i data-lucide="message-circle"></i>
+    </a>
+    <!-- FIN DU BOUTON WHATSAPP -->
+
+    <footer class="main-footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-column">
+            <h4>Haven&Help</h4>
+            <p>
+              Votre plateforme de confiance pour louer un hébergement ou
+              réserver un service local.
+            </p>
+          </div>
+          <div class="footer-column">
+            <h4>Navigation</h4>
+            <ul>
+              <li><a href="#">Louer un Hébergement</a></li>
+              <li><a href="#">Réserver un Service</a></li>
+              <li><a href="#">Expériences</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Légal</h4>
+            <ul>
+              <li><a href="#">Conditions Générales</a></li>
+              <li><a href="#">Confidentialité</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Suivez-nous</h4>
+            <!-- Pour que les icônes s'affichent, il faudra une librairie comme FontAwesome ou des SVGs -->
+            <p>Facebook, Twitter, Instagram</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Haven & Help. Tous droits réservés.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

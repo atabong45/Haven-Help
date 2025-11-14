@@ -1,0 +1,191 @@
+{
+  "accommodations": {
+    "1": [
+      {
+        "id": 1,
+        "userName": "Famille Talla",
+        "userAvatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=100&auto=format&fit=crop",
+        "rating": 5,
+        "date": "2025-11-10",
+        "comment": "Superbe appartement, très propre et sécurisé. Le quartier de Bastos est calme et agréable. Parfait pour notre séjour en famille à Yaoundé. Nous reviendrons !",
+        "response": {
+          "text": "Merci beaucoup pour votre commentaire ! Nous sommes ravis que votre famille ait apprécié le séjour. Vous serez toujours les bienvenus.",
+          "date": "2025-11-11"
+        }
+      },
+      {
+        "id": 2,
+        "userName": "Marc Dubois",
+        "userAvatar": "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=100&auto=format&fit=crop",
+        "rating": 5,
+        "date": "2025-10-28",
+        "comment": "En voyage d'affaires, j'ai trouvé l'appartement très fonctionnel. La connexion Wifi était excellente pour travailler. Le gardien est très serviable.",
+        "response": null
+      },
+      {
+        "id": 3,
+        "userName": "Chloé K.",
+        "userAvatar": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=100&auto=format&fit=crop",
+        "rating": 4,
+        "date": "2025-10-15",
+        "comment": "Très bel appartement, bien situé. Seul petit point, la pression de l'eau dans la douche était un peu faible. Sinon, tout était parfait.",
+        "response": {
+          "text": "Merci pour votre retour Chloé. Nous avons pris note pour la pression de l'eau et allons faire intervenir un technicien. Au plaisir de vous revoir.",
+          "date": "2025-10-16"
+        }
+      }
+    ],
+    "2": [
+      {
+        "id": 4,
+        "userName": "Céline M.",
+        "userAvatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=100&auto=format&fit=crop",
+        "rating": 5,
+        "date": "2025-10-20",
+        "comment": "Un séjour absolument parfait ! La villa est encore plus belle en vrai que sur les photos. La piscine est magnifique et le quartier très calme. Nous reviendrons sans hésiter.",
+        "response": {
+          "text": "Merci beaucoup Céline pour ce retour chaleureux ! Nous sommes ravis que la villa vous ait plu et nous serions enchantés de vous accueillir à nouveau.",
+          "date": "2025-10-21"
+        }
+      },
+      {
+        "id": 5,
+        "userName": "Didier K.",
+        "userAvatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=100&auto=format&fit=crop",
+        "rating": 4,
+        "date": "2025-09-15",
+        "comment": "Très belle maison, bien équipée et spacieuse. Idéale pour un grand groupe. Seul petit bémol, la connexion Wifi était un peu lente par moments.",
+        "response": null
+      }
+    ],
+    "3": [
+      {
+        "id": 6,
+        "userName": "Paul et Hélène",
+        "userAvatar": "https://images.unsplash.com/photo-1527980965255-d3b416303d12?q=80&w=100&auto=format&fit=crop",
+        "rating": 5,
+        "date": "2025-11-01",
+        "comment": "L'endroit rêvé pour une escapade en amoureux. Se réveiller avec la vue sur l'océan, c'est magique. Le bungalow est simple mais très propre et charmant. On a l'impression d'avoir les pieds dans l'eau !",
+        "response": {
+          "text": "Merci pour ce magnifique commentaire ! C'est exactement l'expérience que nous souhaitons offrir. Au plaisir de vous revoir à Kribi.",
+          "date": "2025-11-02"
+        }
+      }
+    ],
+    "5": [
+      {
+        "id": 7,
+        "userName": "Olivier G.",
+        "userAvatar": "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?q=80&w=100&auto=format&fit=crop",
+        "rating": 5,
+        "date": "2025-09-22",
+        "comment": "Service impeccable, digne d'un grand hôtel international. La vue depuis la suite est à couper le souffle. Le personnel est aux petits soins. Une expérience de luxe à Yaoundé.",
+        "response": null
+      }
+    ],
+    "7": [
+      {
+        "id": 8,
+        "userName": "Laura N.",
+        "userAvatar": "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=100&auto=format&fit=crop",
+        "rating": 5,
+        "date": "2025-08-10",
+        "comment": "Quel charme ! L'appartement est décoré avec beaucoup de goût et le balcon est parfait pour le petit-déjeuner. On se sent vraiment au cœur de la vie de Yaoundé.",
+        "response": {
+          "text": "Nous sommes heureux que le charme de l'appartement vous ait séduite, Laura. Merci pour votre visite !",
+          "date": "2025-08-11"
+        }
+      },
+      {
+        "id": 9,
+        "userName": "Thomas",
+        "userAvatar": "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=100&auto=format&fit=crop",
+        "rating": 4,
+        "date": "2025-07-30",
+        "comment": "Très grand et bel appartement. Attention, le quartier de l'Hippodrome est très vivant, donc un peu bruyant le soir. Mais c'est aussi ce qui fait son charme !",
+        "response": null
+      }
+    ],
+    "9": [
+      {
+        "id": 10,
+        "userName": "Fatima Diallo",
+        "userAvatar": "https://images.unsplash.com/photo-1557053910-d9eadeed1c58?q=80&w=100&auto=format&fit=crop",
+        "rating": 5,
+        "date": "2025-10-05",
+        "comment": "Studio très propre, fonctionnel et bien sécurisé. J'y ai passé une semaine pour le travail et c'était parfait. Excellent rapport qualité-prix.",
+        "response": {
+          "text": "Merci Madame Diallo, nous sommes ravis que le studio ait répondu à vos attentes pour votre séjour professionnel.",
+          "date": "2025-10-06"
+        }
+      }
+    ]
+  },
+  "services": {
+    "1": [
+      {
+        "id": 101,
+        "userName": "Alain B.",
+        "userAvatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=100&auto=format&fit=crop",
+        "rating": 5,
+        "date": "2025-11-05",
+        "comment": "Intervention ultra rapide à 2h du matin pour une grosse fuite. M. Fankam a été très professionnel et efficace. Je recommande les yeux fermés !",
+        "response": {
+          "text": "Merci pour votre confiance M. Alain. L'important était de résoudre votre problème au plus vite. N'hésitez pas.",
+          "date": "2025-11-05"
+        }
+      }
+    ],
+    "2": [
+      {
+        "id": 102,
+        "userName": "Société BTP SA",
+        "userAvatar": "https://images.unsplash.com/photo-1531891437562-b1a5b0907504?q=80&w=100&auto=format&fit=crop",
+        "rating": 5,
+        "date": "2025-08-15",
+        "comment": "Nous avons fait appel à Énergie Plus pour l'installation électrique de nos nouveaux bureaux à Douala. Travail impeccable, respect des délais et des normes. Une équipe de confiance.",
+        "response": {
+          "text": "Toute l'équipe d'Énergie Plus vous remercie pour cette collaboration fructueuse. Nous restons à votre disposition pour vos futurs projets.",
+          "date": "2025-08-16"
+        }
+      }
+    ],
+    "4": [
+      {
+        "id": 103,
+        "userName": "Sandrine T.",
+        "userAvatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=100&auto=format&fit=crop",
+        "rating": 5,
+        "date": "2025-08-20",
+        "comment": "Sophie a complètement transformé mon salon ! Son travail est d'une propreté et d'une précision remarquables. En plus, elle est de très bon conseil pour le choix des couleurs.",
+        "response": {
+          "text": "Quel plaisir de lire votre commentaire, Sandrine ! Je suis contente que le résultat vous plaise. C'était un beau projet.",
+          "date": "2025-08-21"
+        }
+      },
+      {
+        "id": 104,
+        "userName": "Martin E.",
+        "userAvatar": "https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=100&auto=format&fit=crop",
+        "rating": 5,
+        "date": "2025-06-12",
+        "comment": "Très professionnelle et ponctuelle. Le chantier a été laissé parfaitement propre. Je referai appel à Couleurs & Nuances.",
+        "response": null
+      }
+    ],
+    "6": [
+      {
+        "id": 105,
+        "userName": "Mme Johnson",
+        "userAvatar": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=100&auto=format&fit=crop",
+        "rating": 5,
+        "date": "2025-09-01",
+        "comment": "Mon jardin n'a jamais été aussi beau ! Antoine est un véritable artiste qui connaît parfaitement les plantes tropicales. Un vrai passionné. Merci !",
+        "response": {
+          "text": "Thank you, Mrs. Johnson! It was a pleasure to work in your beautiful garden in Limbe.",
+          "date": "2025-09-02"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,253 @@
+@use "../core/variables" as *;
+
+.detail-page-main {
+  padding-top: 100px; // Espace pour le header fixe
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+}
+
+.gallery-container {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 16px;
+  overflow: hidden;
+  background: $gray-light;
+}
+
+.gallery-slider {
+  display: flex;
+  height: 100%;
+  transition: transform 0.4s ease-in-out;
+}
+
+.slide {
+  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.gallery-controls button,
+.gallery-actions button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba($white, 0.9);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  &:hover {
+    background: $white;
+  }
+}
+
+#prev-slide {
+  left: 1rem;
+}
+#next-slide {
+  right: 1rem;
+}
+
+.gallery-counter {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba($black, 0.6);
+  color: $white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+.gallery-actions {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  display: flex;
+  gap: 0.5rem;
+  button {
+    position: static;
+    transform: none;
+  }
+}
+
+.detail-layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 4rem;
+  margin-top: 2rem;
+}
+
+.info-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+
+  h1 {
+    font-size: 2.25rem;
+  }
+}
+
+.rating-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: $gray-light;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-weight: 600;
+  i {
+    color: $accent-color;
+  }
+}
+
+.meta-data {
+  color: $gray-dark;
+  margin-bottom: 2rem;
+}
+
+.tabs-container {
+  border-top: 1px solid $gray-medium;
+  padding-top: 2rem;
+}
+
+.tabs-nav {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.tab-btn {
+  padding: 0.5rem 0;
+  font-size: 1rem;
+  font-weight: 500;
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  color: $gray-dark;
+  &.active {
+    color: $primary-color;
+    border-bottom-color: $primary-color;
+  }
+}
+
+.tab-panel {
+  display: none;
+  line-height: 1.7;
+  &.active {
+    display: block;
+  }
+}
+
+#amenities-panel {
+  display: none;
+  &.active {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+}
+
+.amenity-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.location-section {
+  border-top: 1px solid $gray-medium;
+  padding-top: 2rem;
+  margin-top: 2rem;
+  h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .map-placeholder img {
+    width: 100%;
+    border-radius: 8px;
+  }
+}
+
+.booking-card {
+  position: sticky;
+  top: 100px;
+  padding: 1.5rem;
+  border: 1px solid $gray-medium;
+  border-radius: 12px;
+  box-shadow: $box-shadow;
+  height: fit-content;
+}
+
+.booking-price {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  span {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+}
+
+.booking-calendars {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.calendar-group {
+  label {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-bottom: 0.25rem;
+  }
+  input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid $gray-medium;
+    border-radius: 8px;
+  }
+}
+
+.book-btn {
+  width: 100%;
+}
+.map-placeholder {
+  iframe {
+    width: 100%;
+    height: 400px;
+    border: none;
+    border-radius: 8px;
+  }
+}
+
+// Responsive
+@media (max-width: $breakpoint-lg) {
+  .detail-layout {
+    grid-template-columns: 1fr;
+  }
+  .booking-card {
+    margin-top: 2rem;
+    position: static;
+  }
+}

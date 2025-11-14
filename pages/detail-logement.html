@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Détail du Logement - Haven & Help</title>
+
+    <link rel="stylesheet" href="/css/main.css" />
+    <script src="https://unpkg.com/lucide@latest" defer></script>
+    <script src="/js/detail.js" type="module" defer></script>
+    <script src="/js/global.js" type="module" defer></script>
+  </head>
+
+  <body>
+    <header class="main-header">
+      <div class="container">
+        <a href="/index.html" class="logo">Haven<span>&</span>Help</a>
+        <nav class="main-nav">
+          <ul>
+            <li>
+              <a href="/pages/logements.html" class="active"
+                ><i data-lucide="home"></i>Hébergement</a
+              >
+            </li>
+            <li>
+              <a href="/pages/services.html"
+                ><i data-lucide="wrench"></i> Service</a
+              >
+            </li>
+            <li>
+              <a href="#"><i data-lucide="compass"></i> Expériences</a>
+            </li>
+            <li>
+              <a href="/pages/contact.html"
+                ><i data-lucide="mail"></i> Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="header-actions">
+          <button class="btn btn-outline">Connexion</button>
+          <button class="btn btn-accent">Inscription</button>
+        </div>
+        <button id="mobile-menu-toggle" class="mobile-menu-toggle">
+          <span class="icon-menu">
+            <i data-lucide="menu"></i>
+          </span>
+        </button>
+      </div>
+    </header>
+
+    <!-- MENU MOBILE -->
+    <div id="mobile-nav" class="mobile-nav">
+      <div class="mobile-nav-header">
+        <a href="/index.html" class="logo">Haven<span>&</span>Help</a>
+        <button
+          id="mobile-nav-close-btn"
+          class="mobile-nav-close"
+          aria-label="Fermer le menu"
+        >
+          <i data-lucide="x"></i>
+        </button>
+      </div>
+      <div class="mobile-nav-content">
+        <nav class="mobile-nav-links">
+          <ul>
+            <li>
+              <a href="/pages/logements.html" class="active"
+                ><i data-lucide="home"></i> Louer un Hébergement</a
+              >
+            </li>
+            <li>
+              <a href="/pages/services.html"
+                ><i data-lucide="wrench"></i> Réserver un Service</a
+              >
+            </li>
+            <li>
+              <a href="#"><i data-lucide="compass"></i> Expériences</a>
+            </li>
+            <li>
+              <a href="/pages/contact.html"
+                ><i data-lucide="mail"></i> Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="mobile-nav-actions">
+          <a href="#" class="btn btn-outline">Connexion</a>
+          <a href="#" class="btn btn-accent">Inscription</a>
+        </div>
+      </div>
+    </div>
+    <!-- FIN DU MENU MOBILE -->
+
+    <main class="detail-page-main">
+      <div class="container">
+        <a href="/pages/logements.html" class="back-link"
+          ><i data-lucide="arrow-left"></i> Retour</a
+        >
+
+        <div class="gallery-container">
+          <div class="gallery-slider" id="gallery-slider">
+            <!-- Les images seront injectées ici -->
+          </div>
+          <div class="gallery-controls">
+            <button id="prev-slide" aria-label="Image précédente">
+              <i data-lucide="chevron-left"></i>
+            </button>
+            <button id="next-slide" aria-label="Image suivante">
+              <i data-lucide="chevron-right"></i>
+            </button>
+          </div>
+          <div class="gallery-counter" id="gallery-counter"></div>
+          <div class="gallery-actions">
+            <button><i data-lucide="share-2"></i></button>
+            <button><i data-lucide="heart"></i></button>
+          </div>
+        </div>
+
+        <div class="detail-layout">
+          <!-- COLONNE GAUCHE : INFOS -->
+          <div class="detail-content">
+            <div class="info-header">
+              <h1 id="accommodation-title"></h1>
+              <div class="rating-badge">
+                <i data-lucide="star"></i>
+                <span id="accommodation-rating"></span>
+              </div>
+            </div>
+            <div class="meta-data">
+              <span id="accommodation-location"></span> &middot;
+              <span id="accommodation-guests"></span> &middot;
+              <span id="accommodation-bedrooms"></span> &middot;
+              <span id="accommodation-bathrooms"></span>
+            </div>
+
+            <div class="tabs-container">
+              <nav class="tabs-nav">
+                <button class="tab-btn active" data-tab="description">
+                  Description
+                </button>
+                <button class="tab-btn" data-tab="amenities">
+                  Équipements
+                </button>
+                <button class="tab-btn" data-tab="reviews">Avis (0)</button>
+              </nav>
+              <div class="tabs-content">
+                <div class="tab-panel active" id="description-panel">
+                  <!-- Le texte de la description sera injecté ici -->
+                </div>
+                <div class="tab-panel" id="amenities-panel">
+                  <!-- La liste des équipements sera injectée ici -->
+                </div>
+                <div class="tab-panel" id="reviews-panel">
+                  <!-- Le contenu des avis sera injecté ici par JavaScript -->
+                </div>
+              </div>
+            </div>
+
+            <div class="location-section">
+              <h3>Emplacement</h3>
+              <div class="map-placeholder">
+                <!-- Remplacer par un vrai iframe Google Maps plus tard -->
+                <img
+                  src="https://i.imgur.com/2s42i4E.png"
+                  alt="Carte de l'emplacement"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- COLONNE DROITE : RÉSERVATION -->
+          <aside class="booking-card" id="booking-card">
+            <div class="booking-price">
+              <span id="accommodation-price"></span> / nuit
+            </div>
+            <div class="booking-calendars">
+              <div class="calendar-group">
+                <label for="arrival-date">Date d'arrivée</label>
+                <input type="date" id="arrival-date" />
+              </div>
+              <div class="calendar-group">
+                <label for="departure-date">Date de départ</label>
+                <input type="date" id="departure-date" />
+              </div>
+            </div>
+            <button class="btn btn-accent book-btn">Réserver</button>
+          </aside>
+        </div>
+      </div>
+    </main>
+
+    <!-- BOUTON WHATSAPP FLOTTANT -->
+    <a
+      href="https://wa.me/33612345678?text=Bonjour%2C%20j'aimerais%20obtenir%20plus%20d'informations."
+      class="whatsapp-fab"
+      target="_blank"
+      aria-label="Contacter le support sur WhatsApp"
+    >
+      <i data-lucide="message-circle"></i>
+    </a>
+    <!-- FIN DU BOUTON WHATSAPP -->
+
+    <footer class="main-footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-column">
+            <h4>Haven&Help</h4>
+            <p>
+              Votre plateforme de confiance pour louer un hébergement ou
+              réserver un service local.
+            </p>
+          </div>
+          <div class="footer-column">
+            <h4>Navigation</h4>
+            <ul>
+              <li><a href="#">Louer un Hébergement</a></li>
+              <li><a href="#">Réserver un Service</a></li>
+              <li><a href="#">Expériences</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Légal</h4>
+            <ul>
+              <li><a href="#">Conditions Générales</a></li>
+              <li><a href="#">Confidentialité</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Suivez-nous</h4>
+            <!-- Pour que les icônes s'affichent, il faudra une librairie comme FontAwesome ou des SVGs -->
+            <p>Facebook, Twitter, Instagram</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Haven & Help. Tous droits réservés.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trouver un Logement - Haven & Help</title>
+    <!-- Chemins absolus pour les ressources -->
+    <link rel="stylesheet" href="/css/main.css" />
+    <script src="https://unpkg.com/lucide@latest" defer></script>
+    <script src="/js/global.js" type="module" defer></script>
+    <script src="/js/logements.js" type="module" defer></script>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="container">
+        <a href="/index.html" class="logo">Haven<span>&</span>Help</a>
+        <nav class="main-nav">
+          <ul>
+            <!-- Ajout des icônes et de la classe "active" pour la page actuelle -->
+            <li>
+              <a href="/pages/logements.html" class="active"
+                ><i data-lucide="home"></i>Hébergement</a
+              >
+            </li>
+            <li>
+              <a href="/pages/services.html"
+                ><i data-lucide="wrench"></i> Service</a
+              >
+            </li>
+            <li>
+              <a href="#"><i data-lucide="compass"></i> Expériences</a>
+            </li>
+            <li>
+              <a href="/pages/contact.html"><i data-lucide="mail"></i> Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header-actions">
+          <button class="btn btn-outline">Connexion</button>
+          <button class="btn btn-accent">Inscription</button>
+          <!-- Nouvelle classe ici -->
+        </div>
+        <button id="mobile-menu-toggle" class="mobile-menu-toggle">
+          <span class="icon-menu">
+            <i data-lucide="menu"></i>
+          </span>
+        </button>
+      </div>
+    </header>
+
+    <!-- MENU MOBILE -->
+    <div id="mobile-nav" class="mobile-nav">
+      <div class="mobile-nav-header">
+        <a href="/index.html" class="logo">Haven<span>&</span>Help</a>
+        <button
+          id="mobile-nav-close-btn"
+          class="mobile-nav-close"
+          aria-label="Fermer le menu"
+        >
+          <i data-lucide="x"></i>
+        </button>
+      </div>
+      <div class="mobile-nav-content">
+        <nav class="mobile-nav-links">
+          <ul>
+            <li>
+              <a href="/pages/logements.html" class="active"
+                ><i data-lucide="home"></i>Hébergement</a
+              >
+            </li>
+            <li>
+              <a href="/pages/services.html"
+                ><i data-lucide="wrench"></i>Service</a
+              >
+            </li>
+            <li>
+              <a href="#"><i data-lucide="compass"></i> Expériences</a>
+            </li>
+            <li>
+              <a href="/pages/contact.html"><i data-lucide="mail"></i> Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="mobile-nav-actions">
+          <a href="#" class="btn btn-outline">Connexion</a>
+          <a href="#" class="btn btn-accent">Inscription</a>
+        </div>
+      </div>
+    </div>
+    <!-- FIN DU MENU MOBILE -->
+
+    <main class="services-page-main">
+      <!-- Nous réutilisons cette classe pour le padding du haut -->
+      <div class="container">
+        <h1 class="section-title">Trouvez votre prochain logement</h1>
+        <div class="services-page-layout">
+          <!-- On réutilise aussi cette mise en page -->
+
+          <!-- COLONNE DE GAUCHE : FILTRES -->
+          <aside class="filters-panel">
+            <div class="filters-header">
+              <h3>Filtres</h3>
+              <button class="close-filters-btn" aria-label="Fermer les filtres">
+                <i data-lucide="x"></i>
+              </button>
+            </div>
+
+            <div class="filter-group">
+              <h4>Prix maximum / nuit (XAF)</h4>
+              <div class="price-filter">
+                <input
+                  type="range"
+                  id="price-filter"
+                  min="30000"
+                  max="300000"
+                  value="300000"
+                  step="5000"
+                />
+                <div class="price-value">
+                  Jusqu'à <span id="price-value-display">300 000</span> XAF
+                </div>
+              </div>
+            </div>
+
+            <div class="filter-group">
+              <h4>Chambres & Voyageurs</h4>
+              <div class="counter-group">
+                <label for="bedrooms-filter">Chambres</label>
+                <input type="number" id="bedrooms-filter" min="1" value="1" />
+              </div>
+              <div class="counter-group">
+                <label for="guests-filter">Voyageurs</label>
+                <input type="number" id="guests-filter" min="1" value="1" />
+              </div>
+            </div>
+
+            <div class="filter-group">
+              <h4>Équipements</h4>
+              <div id="amenities-filters">
+                <!-- Les équipements seront injectés ici par JS -->
+              </div>
+            </div>
+
+            <button class="btn btn-outline" id="reset-filters">
+              Réinitialiser les filtres
+            </button>
+          </aside>
+
+          <!-- COLONNE DE DROITE : RÉSULTATS -->
+          <div class="results-content">
+            <div class="results-header">
+              <input
+                type="search"
+                id="search-input"
+                placeholder="Rechercher par ville (Yaoundé, Kribi...)"
+              />
+              <button class="mobile-filter-btn">
+                <i data-lucide="filter"></i> Filtres
+              </button>
+            </div>
+            <p class="results-count">
+              <span id="accommodation-count">0</span> logements trouvés
+            </p>
+            <div id="accommodations-list" class="grid-layout">
+              <!-- Les cartes de logement seront injectées ici par JS -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- BOUTON WHATSAPP FLOTTANT -->
+    <a
+      href="https://wa.me/33612345678?text=Bonjour%2C%20j'aimerais%20obtenir%20plus%20d'informations."
+      class="whatsapp-fab"
+      target="_blank"
+      aria-label="Contacter le support sur WhatsApp"
+    >
+      <i data-lucide="message-circle"></i>
+    </a>
+    <!-- FIN DU BOUTON WHATSAPP -->
+
+    <footer class="main-footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-column">
+            <h4>Haven&Help</h4>
+            <p>
+              Votre plateforme de confiance pour louer un hébergement ou
+              réserver un service local.
+            </p>
+          </div>
+          <div class="footer-column">
+            <h4>Navigation</h4>
+            <ul>
+              <li><a href="#">Louer un Hébergement</a></li>
+              <li><a href="#">Réserver un Service</a></li>
+              <li><a href="#">Expériences</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Légal</h4>
+            <ul>
+              <li><a href="#">Conditions Générales</a></li>
+              <li><a href="#">Confidentialité</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Suivez-nous</h4>
+            <!-- Pour que les icônes s'affichent, il faudra une librairie comme FontAwesome ou des SVGs -->
+            <p>Facebook, Twitter, Instagram</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Haven & Help. Tous droits réservés.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

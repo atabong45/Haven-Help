@@ -1,0 +1,100 @@
+@use "../core/variables" as *;
+
+// La grande carte blanche qui contient tout
+.search-container {
+  background: $white;
+  padding: 1.5rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(40, 50, 60, 0.08);
+}
+
+// Le formulaire interne
+.search-form-inner {
+  display: grid;
+  // Crée des colonnes flexibles et une colonne fixe pour le bouton
+  grid-template-columns: 1fr 1fr 1fr auto;
+  gap: 1rem;
+  background: $gray-light;
+  padding: 1rem;
+  border-radius: 12px;
+  align-items: flex-end; // Aligne tout en bas
+}
+
+.form-group {
+  label {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: $gray-dark;
+    margin-bottom: 0.25rem;
+  }
+
+  input,
+  select,
+  textarea {
+    width: 100%;
+    border: 1px solid $gray-medium;
+    border-radius: $border-radius;
+    padding: 0.75rem;
+    font-size: 1rem;
+    background: $white;
+
+    &:focus {
+      outline: none;
+      border-color: $primary-color;
+    }
+  }
+}
+
+// Ligne de séparation
+.separator {
+  border: none;
+  height: 1px;
+  background-color: $gray-medium;
+  margin: 1.5rem 0;
+}
+
+// Les filtres rapides
+.quick-filters {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+
+  span {
+    font-size: 0.9rem;
+    color: $gray-dark;
+  }
+}
+
+.filter-link {
+  font-size: 0.9rem;
+  color: $text-color;
+  padding: 0.25rem 0.5rem;
+  border-radius: $border-radius;
+  transition: $transition-smooth;
+  text-decoration: none;
+
+  &:hover {
+    background-color: $gray-light;
+  }
+}
+
+textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+// --- Responsive pour la barre de recherche ---
+@media (max-width: $breakpoint-lg) {
+  .search-form-inner {
+    grid-template-columns: 1fr 1fr; // 2 colonnes sur tablette
+  }
+}
+
+@media (max-width: $breakpoint-md) {
+  .search-form-inner {
+    grid-template-columns: 1fr; // 1 colonne sur mobile
+    gap: 1.5rem;
+  }
+}
