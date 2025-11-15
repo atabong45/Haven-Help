@@ -1,7 +1,7 @@
 @use "../core/variables" as *;
 
 .services-page-main {
-  padding-top: 100px; // Espace pour le header fixe
+  padding-top: 100px; 
 }
 
 .services-page-layout {
@@ -17,9 +17,9 @@
   border: 1px solid $gray-medium;
   border-radius: 12px;
   padding: 1.5rem;
-  height: fit-content; // Pour qu'il ne s'étire pas inutilement
+  height: fit-content; 
   position: sticky;
-  top: 100px; // Pour qu'il suive le scroll
+  top: 100px; 
 }
 
 .filters-header {
@@ -34,7 +34,7 @@
   }
   .close-filters-btn {
     display: none;
-  } // Caché sur ordinateur
+  } 
 }
 
 .filter-group {
@@ -178,7 +178,7 @@ input[type="range"] {
   .service-footer {
     border-top: 1px solid $gray-medium;
     padding-top: 1rem;
-    margin-top: auto; // Pousse le footer en bas
+    margin-top: auto; 
     display: flex;
     justify-content: space-between;
     align-items: center;

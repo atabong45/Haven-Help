@@ -70,8 +70,7 @@ function setupEventListeners() {
     });
 
   document.getElementById("reset-filters").addEventListener("click", () => {
-    // ... (logique de réinitialisation à venir)
-    window.location.reload(); // Solution simple pour l'instant
+    window.location.reload();
   });
 
   // Logique pour le menu filtre mobile
@@ -123,23 +122,25 @@ function applyFilters() {
 
 // Affiche les services dans le DOM
 function displayServices(services) {
-    const container = document.getElementById("services-list");
-    document.getElementById("service-count").textContent = services.length;
+  const container = document.getElementById("services-list");
+  document.getElementById("service-count").textContent = services.length;
 
-    if (services.length === 0) {
-        container.innerHTML = "<p>Aucun service ne correspond à vos critères.</p>";
-        return;
-    }
+  if (services.length === 0) {
+    container.innerHTML = "<p>Aucun service ne correspond à vos critères.</p>";
+    return;
+  }
 
-    container.innerHTML = services
-        .map(
-            (service) => `
-        <a href="detail-service.html?id=${service.id
-                }" class="card service-card">
+  container.innerHTML = services
+    .map(
+      (service) => `
+        <a href="detail-service.html?id=${
+          service.id
+        }" class="card service-card">
             <div class="card-img-container">
                 <img src="${service.image}" alt="${service.title}">
                 <span class="service-tag">${service.category}</span>
-                <span class="service-rating"><i data-lucide="star"></i>${service.rating
+                <span class="service-rating"><i data-lucide="star"></i>${
+                  service.rating
                 }</span>
             </div>
             
@@ -147,7 +148,7 @@ function displayServices(services) {
 
             <div class="provider-info">
                 <div class="provider-avatar">${service.providerName.charAt(
-                    0
+                  0
                 )}</div>
                 <div>
                     <div>${service.providerName}</div>
@@ -157,7 +158,8 @@ function displayServices(services) {
 
             <div class="service-meta">
                 <span><i data-lucide="map-pin"></i> ${service.location}</span>
-                ${service.certified
+                ${
+                  service.certified
                     ? `<span><i data-lucide="shield-check"></i> Certifié</span>`
                     : ""
                 }
@@ -165,15 +167,16 @@ function displayServices(services) {
 
             <div class="service-footer">
                 <div class="service-price">
-                    ${service.price} XAF <span class="price-type">/${service.priceType === "heure" ? "heure" : "forfait"
-                }</span>
+                    ${service.price} XAF <span class="price-type">/${
+        service.priceType === "heure" ? "heure" : "forfait"
+      }</span>
                 </div>
                  <i data-lucide="info"></i>
             </div>
         </a>
     `
-        )
-        .join("");
+    )
+    .join("");
 
-    lucide.createIcons();
+  lucide.createIcons();
 }

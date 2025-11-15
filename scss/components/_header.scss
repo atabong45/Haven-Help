@@ -69,13 +69,12 @@
   }
 
   @media (max-width: $breakpoint-lg) {
-    // Changé pour lg pour plus de marge
     .main-nav,
     .header-actions {
       display: none;
     }
     .mobile-menu-toggle {
-      display: flex; // Changez 'block' en 'flex' pour mieux centrer
+      display: flex; 
       align-items: center;
       justify-content: center;
       background: none;

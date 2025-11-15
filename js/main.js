@@ -1,5 +1,3 @@
-// Fichier : js/main.js
-
 import { fetchData } from "./modules/dataLoader.js";
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -12,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
   lucide.createIcons();
 });
 
-// Le reste de la fonction loadAccommodations() ne change pas...
+
 async function loadAccommodations() {
   const accommodations = await fetchData("data/accommodations.json");
   const container = document.getElementById("accommodations-list");

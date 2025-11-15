@@ -18,7 +18,7 @@
   border-radius: 50%;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   transition: transform 0.2s ease-in-out;
-  text-decoration: none; // Pour s'assurer qu'il n'est pas souligné
+  text-decoration: none;
 
   // Style de l'icône à l'intérieur
   svg {
@@ -28,6 +28,6 @@
 
   &:hover {
     transform: scale(1.1);
-    text-decoration: none; // Reste non souligné au survol
+    text-decoration: none;
   }
 }

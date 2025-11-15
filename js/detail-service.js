@@ -156,7 +156,7 @@ async function loadReviews(serviceId) {
   lucide.createIcons();
 }
 
-// EXACTEMENT la même fonction que pour la page detail-logement.js
+
 function initTabs() {
   const tabButtons = document.querySelectorAll(".tab-btn");
   const tabPanels = document.querySelectorAll(".tab-panel");

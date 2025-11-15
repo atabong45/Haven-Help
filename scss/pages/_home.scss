@@ -1,7 +1,7 @@
 @use "../core/variables" as *;
 
 .hero {
-  height: 80vh; // CORRECTION : Hauteur réduite de 100vh à 80vh pour un meilleur équilibre
+  height: 80vh;
   position: relative;
   display: flex;
   align-items: center;

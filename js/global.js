@@ -1,4 +1,3 @@
-// Fichier : js/global.js
 import { initMobileMenu } from "./components/mobileMenu.js";
 
 document.addEventListener("DOMContentLoaded", () => {

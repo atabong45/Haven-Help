@@ -1,5 +1,3 @@
-// Fichier : js/components/mobileMenu.js
-
 export function initMobileMenu() {
   const openButton = document.getElementById("mobile-menu-toggle");
   const closeButton = document.getElementById("mobile-nav-close-btn");
